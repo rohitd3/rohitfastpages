@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 10:45:44 2022
+# Make data base, printed on Tue Aug 23 08:38:08 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+WSLENV = ELECTRON_RUN_AS_NODE/w:
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -47,13 +47,13 @@ VSCODE_CWD = /mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rohitde/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/rohitde/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/rohitde/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/rohitde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-b9e2533e-c68b-4ed1-b442-e1b580616122.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-06b06048-b10b-4910-9c7d-18339d3518e0.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -67,11 +67,9 @@ PWD = /home/rohitde/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/8_interop
+WSL_INTEROP = /run/WSL/7078_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
-# environment
-WT_SESSION = 3d0b0c5a-3ae9-4883-bdc0-f6ceb9767769
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -93,7 +91,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 4
+SHLVL = 1
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -124,8 +122,6 @@ MFLAGS = -pqrR
 +F = $(notdir $+)
 # environment
 VSCODE_HANDLES_SIGPIPE = true
-# environment
-WT_PROFILE_ID = {0caa0dad-35be-5f56-a8ff-afceeeaa6101}
 # default
 MAKEFILES := 
 # automatic
@@ -153,7 +149,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=4/95=4%
+# Load=68/1024=7%, Rehash=0, Collisions=4/93=4%
 
 # Pattern-specific Variable Values
 
@@ -278,11 +274,11 @@ convert: .FORCE
 
 .FORCE:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 53):
 	chmod -R u+rw .
+ 
 
 # files hash-table stats:
 # Load=16/1024=2%, Rehash=0, Collisions=0/37=0%
@@ -298,6 +294,6 @@ convert: .FORCE
 # strcache performance: lookups = 73 / hit rate = 35%
 # hash-table stats:
 # Load=47/8192=1%, Rehash=0, Collisions=1/73=1%
-# Finished Make data base on Mon Aug 22 10:45:44 2022
+# Finished Make data base on Tue Aug 23 08:38:08 2022
 
  
