@@ -4,23 +4,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Rohit’s first entry! | rohitd3’s fastpages</title>
+<title>verify environment in bash | rohitd3’s fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Rohit’s first entry!" />
+<meta property="og:title" content="verify environment in bash" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="dis da first post" />
-<meta property="og:description" content="dis da first post" />
+<meta name="description" content="bash commands to check environment" />
+<meta property="og:description" content="bash commands to check environment" />
 <link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html" />
 <meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html" />
 <meta property="og:site_name" content="rohitd3’s fastpages" />
-<meta property="og:image" content="https://rohitd3.github.io/rohitfastpages/images/kurtis.png" />
+<meta property="og:image" content="https://rohitd3.github.io/rohitfastpages/images/helloiamcow.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-26T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://rohitd3.github.io/rohitfastpages/images/kurtis.png" />
-<meta property="twitter:title" content="Rohit’s first entry!" />
+<meta property="twitter:image" content="https://rohitd3.github.io/rohitfastpages/images/helloiamcow.png" />
+<meta property="twitter:title" content="verify environment in bash" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-26T00:00:00-05:00","datePublished":"2022-08-26T00:00:00-05:00","description":"dis da first post","headline":"Rohit’s first entry!","image":"https://rohitd3.github.io/rohitfastpages/images/kurtis.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html"},"url":"https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-26T00:00:00-05:00","datePublished":"2022-08-26T00:00:00-05:00","description":"bash commands to check environment","headline":"verify environment in bash","image":"https://rohitd3.github.io/rohitfastpages/images/helloiamcow.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html"},"url":"https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/rohitfastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rohitd3.github.io/rohitfastpages/feed.xml" title="rohitd3's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/rohitfastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Rohit&#39;s first entry!</h1><p class="page-description">dis da first post</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-26T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">verify environment in bash</h1><p class="page-description">bash commands to check environment</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-26T00:00:00-05:00" itemprop="datePublished">
         Aug 26, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -141,12 +141,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">REQUIRED_PKG</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span>
-<span class="nv">PKG_OK</span><span class="o">=</span><span class="k">$(</span>dpkg-query -W --showformat<span class="o">=</span><span class="s1">&#39;${Status}\n&#39;</span> <span class="nv">$REQUIRED_PKG</span><span class="p">|</span>grep <span class="s2">&quot;Package is installed!&quot;</span><span class="k">)</span>
-<span class="nb">echo</span> Checking <span class="k">for</span> <span class="nv">$REQUIRED_PKG</span>: <span class="nv">$PKG_OK</span>
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;&quot;</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="nv">$PKG_OK</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-  <span class="nb">echo</span> <span class="s2">&quot;No </span><span class="nv">$REQUIRED_PKG</span><span class="s2">. Setting up </span><span class="nv">$REQUIRED_PKG</span><span class="s2">.&quot;</span>
-<span class="k">fi</span>
+<div class=" highlight hl-bash"><pre><span></span>jupyter kernelspec list
 </pre></div>
 
     </div>
@@ -159,7 +154,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Checking for python3: install ok installed
+<pre>Available kernels:
+  bash          /home/rohitde/.local/share/jupyter/kernels/bash
+  java          /home/rohitde/.local/share/jupyter/kernels/java
+  javascript    /home/rohitde/.local/share/jupyter/kernels/javascript
+  python3       /home/rohitde/.local/share/jupyter/kernels/python3
 </pre>
 </div>
 </div>
@@ -177,7 +176,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>dpkg-query -l python3
+<div class=" highlight hl-bash"><pre><span></span>python --version
+python2 --version
+java --version
+conda --version
 </pre></div>
 
     </div>
@@ -190,47 +192,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Desired=Unknown/Install/Remove/Purge/Hold
-| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
-|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name           Version        Architecture Description
-+++-==============-==============-============-=========================================================================
-ii  python3        3.8.2-0ubuntu2 amd64        interactive high-level object-oriented language (default python3 version)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>dpkg -l <span class="p">|</span> grep java
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>ii  ca-certificates-<span class="ansi-red-intense-fg ansi-bold">java</span>                   20190405ubuntu1                   all          Common CA certificates (JKS keystore)
-ii  <span class="ansi-red-intense-fg ansi-bold">java</span>-common                            0.72                              all          Base package for Java runtimes
-ii  <span class="ansi-red-intense-fg ansi-bold">java</span>script-common                      11                                all          Base support for JavaScript library packages
-ii  libatk-wrapper-<span class="ansi-red-intense-fg ansi-bold">java</span>                    0.37.1-1                          all          ATK implementation for Java using JNI
-ii  libatk-wrapper-<span class="ansi-red-intense-fg ansi-bold">java</span>-jni:amd64          0.37.1-1                          amd64        ATK implementation for Java using JNI (JNI bindings)
+<pre>Python 3.9.12
+Python 2.7.18
+openjdk 11.0.16 2022-07-19
+OpenJDK Runtime Environment (build 11.0.16+8-post-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 11.0.16+8-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)
+conda 4.14.0
 </pre>
 </div>
 </div>
