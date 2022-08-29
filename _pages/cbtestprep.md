@@ -4,8 +4,28 @@ title: Collegeboard Work
 permalink: /cbtestprep/
 ---
 
-AP Test Prep
+# AP Test Prep
 
-### Unit 1: Primitive Types
+## Week 1
+----------------------------------------------------
+### Notes
+Terms to know:
+- shell
+- terminal
 
-<!-- [Example Notebook](https://ad1616.github.io/ADfastpages/java/2022/08/24/CoulombLaw.html) -->
+View previous command by pressing up arrow ^
+
+$ pwd
+- shows the directory
+
+$ cd
+- change directory
+
+lower case is primitive
+
+Upper case is wrapper class
+
+primitive you just get the data
+
+### Primitive Types
+[Java Primitive Code]()
