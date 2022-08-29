@@ -27,5 +27,5 @@ Upper case is wrapper class
 
 primitive you just get the data
 
-### Primitive Types
-[Java Primitive Code]()
+### Primitive
+[Java Primitive gpa Calculator](https://rohitd3.github.io/rohitfastpages/java/2022/08/28/javagpacalc.html)
