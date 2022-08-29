@@ -4,9 +4,9 @@
         "post0": {
             "title": "verify environment in bash",
             "content": "jupyter kernelspec list . Available kernels: bash /home/rohitde/.local/share/jupyter/kernels/bash java /home/rohitde/.local/share/jupyter/kernels/java javascript /home/rohitde/.local/share/jupyter/kernels/javascript python3 /home/rohitde/.local/share/jupyter/kernels/python3 . python --version python2 --version java --version conda --version . Python 3.9.12 Python 2.7.18 openjdk 11.0.16 2022-07-19 OpenJDK Runtime Environment (build 11.0.16+8-post-Ubuntu-0ubuntu120.04) OpenJDK 64-Bit Server VM (build 11.0.16+8-post-Ubuntu-0ubuntu120.04, mixed mode, sharing) conda 4.14.0 .",
-            "url": "https://rohitd3.github.io/rohitfastpages/bash/2022/08/26/verify-env.html",
-            "relUrl": "/bash/2022/08/26/verify-env.html",
-            "date": " • Aug 26, 2022"
+            "url": "https://rohitd3.github.io/rohitfastpages/bash/2022/08/28/verify-env.html",
+            "relUrl": "/bash/2022/08/28/verify-env.html",
+            "date": " • Aug 28, 2022"
         }
         
     
@@ -81,17 +81,6 @@
   
   
       ,"page0": {
-          "title": "Homework",
-          "content": "",
-          "url": "https://rohitd3.github.io/rohitfastpages/homework/",
-          "relUrl": "/homework/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page1": {
           "title": "About Me",
           "content": "Hi! I am Rohit De and am of the class of 2023. Excited for this year in AP Computer Science A!! .",
           "url": "https://rohitd3.github.io/rohitfastpages/about/",
@@ -102,6 +91,19 @@
   
 
   
+      ,"page1": {
+          "title": "Collegeboard Work",
+          "content": "AP Test Prep . Unit 1: Primitive Types .",
+          "url": "https://rohitd3.github.io/rohitfastpages/cbtestprep/",
+          "relUrl": "/cbtestprep/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
 
   
   
@@ -123,7 +125,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rohitd3.github.io/rohitfastpages/robots.txt",
