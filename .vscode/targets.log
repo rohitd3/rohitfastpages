@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 23 08:38:08 2022
+# Make data base, printed on Sun Aug 28 21:50:33 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -27,7 +27,7 @@ WSLENV = ELECTRON_RUN_AS_NODE/w:
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/rohitde/rohitfastpages
+CURDIR := /home/rohitde/vscode/rohitfastpages
 # makefile
 SHELL = /bin/sh
 # environment
@@ -47,13 +47,15 @@ VSCODE_CWD = /mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rohitde/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/rohitde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin
+PATH = /home/rohitde/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/rohitde/.local/bin:/home/rohitde/anaconda3/bin:/home/rohitde/anaconda3/condabin:/path/to/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
+CONDA_PREFIX = /home/rohitde/anaconda3
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-06b06048-b10b-4910-9c7d-18339d3518e0.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-ae20d26e-ab46-4186-9d30-7e8e96cc1d72.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -63,13 +65,17 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/rohitde/rohitfastpages
+CONDA_EXE = /home/rohitde/anaconda3/bin/conda
+# environment
+PWD = /home/rohitde/vscode/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/7078_interop
+WSL_INTEROP = /run/WSL/15079_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WT_SESSION = 921a40e0-1a43-4f2c-bf6a-2e75454bd47e
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -79,17 +85,23 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = rohitde
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
+# environment
+CONDA_DEFAULT_ENV = base
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+# environment
+CONDA_SHLVL = 1
 # environment
 SHLVL = 1
 # default
@@ -122,12 +134,16 @@ MFLAGS = -pqrR
 +F = $(notdir $+)
 # environment
 VSCODE_HANDLES_SIGPIPE = true
+# environment
+WT_PROFILE_ID = {0caa0dad-35be-5f56-a8ff-afceeeaa6101}
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+CONDA_PYTHON_EXE = /home/rohitde/anaconda3/bin/python
 # environment
 HOSTTYPE = x86_64
 # automatic
@@ -136,6 +152,8 @@ HOSTTYPE = x86_64
 SUFFIXES := 
 # environment
 WAYLAND_DISPLAY = wayland-0
+# environment
+_CE_M = 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # default
@@ -147,9 +165,9 @@ TERM = xterm-256color
 # environment
 WSL_DISTRO_NAME = Ubuntu
 # environment
-MOTD_SHOWN = update-motd
+_CE_CONDA = 
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=4/93=4%
+# Load=77/1024=8%, Rehash=0, Collisions=6/102=6%
 
 # Pattern-specific Variable Values
 
@@ -261,6 +279,7 @@ help:
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
@@ -278,7 +297,6 @@ convert: .FORCE
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 53):
 	chmod -R u+rw .
- 
 
 # files hash-table stats:
 # Load=16/1024=2%, Rehash=0, Collisions=0/37=0%
@@ -294,6 +312,6 @@ convert: .FORCE
 # strcache performance: lookups = 73 / hit rate = 35%
 # hash-table stats:
 # Load=47/8192=1%, Rehash=0, Collisions=1/73=1%
-# Finished Make data base on Tue Aug 23 08:38:08 2022
+# Finished Make data base on Sun Aug 28 21:50:33 2022
 
  
