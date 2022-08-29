@@ -141,7 +141,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">)</span>
+<div class=" highlight hl-java"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="err">&#39;</span><span class="n">hello</span> <span class="n">world</span><span class="err">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -178,85 +178,85 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="c1"># List with dictionary records placed in a list</span>
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;MovieName&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;Spider-Man: No Way Home&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;MovieYear&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;2021&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Rating&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;5&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Actors&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;Tom Holland&quot;</span><span class="p">,</span> <span class="s2">&quot;Tobey Maguire&quot;</span><span class="p">,</span> <span class="s2">&quot;Zendaya&quot;</span><span class="p">,</span> <span class="s2">&quot;Andrew Garfield&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Marisa Tomei&quot;</span>
-    <span class="p">]</span>
+<div class=" highlight hl-java"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="o">[]</span>
+<span class="err">#</span> <span class="n">List</span> <span class="n">with</span> <span class="n">dictionary</span> <span class="n">records</span> <span class="n">placed</span> <span class="n">in</span> <span class="n">a</span> <span class="n">list</span>
+<span class="n">InfoDb</span><span class="p">.</span><span class="na">append</span><span class="p">({</span>
+    <span class="s">&quot;MovieName&quot;</span><span class="p">:</span>
+    <span class="s">&quot;Spider-Man: No Way Home&quot;</span><span class="p">,</span>
+    <span class="s">&quot;MovieYear&quot;</span><span class="p">:</span>
+    <span class="s">&quot;2021&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Rating&quot;</span><span class="p">:</span>
+    <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Actors&quot;</span><span class="p">:</span> <span class="o">[</span>
+        <span class="s">&quot;Tom Holland&quot;</span><span class="p">,</span> <span class="s">&quot;Tobey Maguire&quot;</span><span class="p">,</span> <span class="s">&quot;Zendaya&quot;</span><span class="p">,</span> <span class="s">&quot;Andrew Garfield&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Marisa Tomei&quot;</span>
+    <span class="o">]</span>
 <span class="p">})</span>
 
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;MovieName&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;Star Wars: The Force Awakens&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;MovieYear&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;2015&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Rating&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Actors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Daisy Ridley&quot;</span><span class="p">,</span> <span class="s2">&quot;John Boyega&quot;</span><span class="p">,</span> <span class="s2">&quot;Harrison Ford&quot;</span><span class="p">,</span> <span class="s2">&quot;Adam Driver&quot;</span><span class="p">]</span>
+<span class="n">InfoDb</span><span class="p">.</span><span class="na">append</span><span class="p">({</span>
+    <span class="s">&quot;MovieName&quot;</span><span class="p">:</span>
+    <span class="s">&quot;Star Wars: The Force Awakens&quot;</span><span class="p">,</span>
+    <span class="s">&quot;MovieYear&quot;</span><span class="p">:</span>
+    <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Rating&quot;</span><span class="p">:</span>
+    <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Actors&quot;</span><span class="p">:</span> <span class="o">[</span><span class="s">&quot;Daisy Ridley&quot;</span><span class="p">,</span> <span class="s">&quot;John Boyega&quot;</span><span class="p">,</span> <span class="s">&quot;Harrison Ford&quot;</span><span class="p">,</span> <span class="s">&quot;Adam Driver&quot;</span><span class="o">]</span>
 <span class="p">})</span>
 
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;MovieName&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;Toy Story&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;MovieYear&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;1995&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Rating&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;5&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Actors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Tom Hanks&quot;</span><span class="p">,</span> <span class="s2">&quot;Laurie Metcalf&quot;</span><span class="p">,</span> <span class="s2">&quot;Ernie Sabella&quot;</span><span class="p">,</span> <span class="s2">&quot;Nathan Lane&quot;</span><span class="p">]</span>
+<span class="n">InfoDb</span><span class="p">.</span><span class="na">append</span><span class="p">({</span>
+    <span class="s">&quot;MovieName&quot;</span><span class="p">:</span>
+    <span class="s">&quot;Toy Story&quot;</span><span class="p">,</span>
+    <span class="s">&quot;MovieYear&quot;</span><span class="p">:</span>
+    <span class="s">&quot;1995&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Rating&quot;</span><span class="p">:</span>
+    <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Actors&quot;</span><span class="p">:</span> <span class="o">[</span><span class="s">&quot;Tom Hanks&quot;</span><span class="p">,</span> <span class="s">&quot;Laurie Metcalf&quot;</span><span class="p">,</span> <span class="s">&quot;Ernie Sabella&quot;</span><span class="p">,</span> <span class="s">&quot;Nathan Lane&quot;</span><span class="o">]</span>
 <span class="p">})</span>
 
 
-<span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Movie Name:&quot;</span><span class="p">,</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s2">&quot;MovieName&quot;</span><span class="p">],</span> <span class="s2">&quot;Year:&quot;</span><span class="p">,</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s2">&quot;MovieYear&quot;</span><span class="p">],</span> <span class="s2">&quot;Rating: &quot;</span><span class="p">,</span><span class="n">InfoDb</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s2">&quot;Rating&quot;</span><span class="p">]</span>  <span class="p">)</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Actors in the movie: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># \t is a tab indent, end=&quot;&quot; make sure no return occurs</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s2">&quot;Actors&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
-    <span class="nb">print</span><span class="p">()</span>
+<span class="n">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;Movie Name:&quot;</span><span class="p">,</span> <span class="n">InfoDb</span><span class="o">[</span><span class="n">n</span><span class="o">][</span><span class="s">&quot;MovieName&quot;</span><span class="o">]</span><span class="p">,</span> <span class="s">&quot;Year:&quot;</span><span class="p">,</span> <span class="n">InfoDb</span><span class="o">[</span><span class="n">n</span><span class="o">][</span><span class="s">&quot;MovieYear&quot;</span><span class="o">]</span><span class="p">,</span> <span class="s">&quot;Rating: &quot;</span><span class="p">,</span><span class="n">InfoDb</span><span class="o">[</span><span class="n">n</span><span class="o">][</span><span class="s">&quot;Rating&quot;</span><span class="o">]</span>  <span class="p">)</span>  <span class="err">#</span> <span class="n">using</span> <span class="n">comma</span> <span class="n">puts</span> <span class="n">space</span> <span class="n">between</span> <span class="n">values</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">&quot;\t&quot;</span><span class="p">,</span> <span class="s">&quot;Actors in the movie: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">)</span>  <span class="err">#</span> <span class="err">\</span><span class="n">t</span> <span class="n">is</span> <span class="n">a</span> <span class="n">tab</span> <span class="n">indent</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">no</span> <span class="k">return</span> <span class="n">occurs</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="n">InfoDb</span><span class="o">[</span><span class="n">n</span><span class="o">][</span><span class="s">&quot;Actors&quot;</span><span class="o">]</span><span class="p">))</span>  <span class="err">#</span> <span class="n">join</span> <span class="n">allows</span> <span class="n">printing</span> <span class="n">a</span> <span class="n">string</span> <span class="n">list</span> <span class="n">with</span> <span class="n">separator</span>
+    <span class="nf">print</span><span class="p">()</span>
 
 
-<span class="k">def</span> <span class="nf">tester</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop with range:&quot;</span><span class="p">)</span>
+<span class="n">def</span> <span class="nf">tester</span><span class="p">():</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;For loop with range:&quot;</span><span class="p">)</span>
     <span class="n">for_loop_limit</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop&quot;</span><span class="p">)</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;For loop&quot;</span><span class="p">)</span>
     <span class="n">for_loop</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop&quot;</span><span class="p">)</span>
-    <span class="n">while_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># requires initial index to start while</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recursive loop&quot;</span><span class="p">)</span>
-    <span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># requires initial index to start recursion</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;While loop&quot;</span><span class="p">)</span>
+    <span class="n">while_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="err">#</span> <span class="n">requires</span> <span class="n">initial</span> <span class="n">index</span> <span class="n">to</span> <span class="n">start</span> <span class="k">while</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">&quot;Recursive loop&quot;</span><span class="p">)</span>
+    <span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="err">#</span> <span class="n">requires</span> <span class="n">initial</span> <span class="n">index</span> <span class="n">to</span> <span class="n">start</span> <span class="n">recursion</span>
 
 
-<span class="c1"># for loop iterates on length of InfoDb</span>
-<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)):</span>
+<span class="err">#</span> <span class="k">for</span> <span class="n">loop</span> <span class="n">iterates</span> <span class="n">on</span> <span class="n">length</span> <span class="n">of</span> <span class="n">InfoDb</span>
+<span class="n">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="n">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)):</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">for_loop_limit</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="n">def</span> <span class="nf">for_loop_limit</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="n">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
       
-<span class="c1"># while loop contains an initial n and an index incrementing statement (n += 1)</span>
-<span class="c1"># dont need to write n = 0 because it being called in the tester</span>
-<span class="k">def</span> <span class="nf">while_loop</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+<span class="err">#</span> <span class="k">while</span> <span class="n">loop</span> <span class="n">contains</span> <span class="n">an</span> <span class="n">initial</span> <span class="n">n</span> <span class="n">and</span> <span class="n">an</span> <span class="n">index</span> <span class="n">incrementing</span> <span class="nf">statement</span> <span class="p">(</span><span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="err">#</span> <span class="n">dont</span> <span class="n">need</span> <span class="n">to</span> <span class="n">write</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span> <span class="n">because</span> <span class="n">it</span> <span class="n">being</span> <span class="n">called</span> <span class="n">in</span> <span class="n">the</span> <span class="n">tester</span>
+<span class="n">def</span> <span class="nf">while_loop</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
         <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">return</span>
 
-<span class="c1"># recursion simulates loop incrementing on each call (n + 1) until exit condition is met</span>
-<span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+<span class="err">#</span> <span class="n">recursion</span> <span class="n">simulates</span> <span class="n">loop</span> <span class="n">incrementing</span> <span class="n">on</span> <span class="n">each</span> <span class="nf">call</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="n">until</span> <span class="n">exit</span> <span class="n">condition</span> <span class="n">is</span> <span class="n">met</span>
+<span class="n">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
         <span class="n">recursive_loop</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">return</span> <span class="c1"># exit condition</span>
+    <span class="k">return</span> <span class="err">#</span> <span class="n">exit</span> <span class="n">condition</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
   <span class="n">tester</span><span class="p">()</span>
 </pre></div>
 
