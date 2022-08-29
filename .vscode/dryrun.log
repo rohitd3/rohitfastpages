@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/rohitde/rohitfastpages'
+make: Entering directory '/home/rohitde/vscode/rohitfastpages'
 cat Makefile
-make: Leaving directory '/home/rohitde/rohitfastpages'
+make: Leaving directory '/home/rohitde/vscode/rohitfastpages'
  
