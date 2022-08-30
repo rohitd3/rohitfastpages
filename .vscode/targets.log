@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 29 19:59:20 2022
+# Make data base, printed on Mon Aug 29 21:29:22 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ CONDA_PREFIX = /home/rohitde/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-6c26002d-8f8b-4e63-abb1-0c7e802d3fec.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-e7d5cdb0-badb-471c-9a2d-65faf1e3403c.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,7 +71,7 @@ PWD = /home/rohitde/vscode/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/27058_interop
+WSL_INTEROP = /run/WSL/8_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -281,7 +281,6 @@ bash-jekyll: .FORCE
 
 convert: .FORCE
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 29):
@@ -302,12 +301,13 @@ convert: .FORCE
 
 # No general ('VPATH' variable) search path.
 
+ 
 # strcache buffers: 1 (0) / strings = 47 / storage = 492 B / avg = 10 B
 # current buf: size = 8162 B / used = 492 B / count = 47 / avg = 10 B
 
 # strcache performance: lookups = 73 / hit rate = 35%
 # hash-table stats:
 # Load=47/8192=1%, Rehash=0, Collisions=1/73=1%
-# Finished Make data base on Mon Aug 29 19:59:20 2022
+# Finished Make data base on Mon Aug 29 21:29:22 2022
 
  
