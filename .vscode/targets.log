@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Sep  5 21:56:23 2022
+# Make data base, printed on Mon Sep  5 23:47:09 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ CONDA_PREFIX = /home/rohitde/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-32dd425b-1ddb-41ed-8278-94c06245ae12.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-67622564-3f61-4785-aab3-8e93f83490c3.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -278,8 +278,8 @@ bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 46):
  
+#  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
 convert: .FORCE
@@ -310,6 +310,6 @@ convert: .FORCE
 # strcache performance: lookups = 78 / hit rate = 33%
 # hash-table stats:
 # Load=52/8192=1%, Rehash=0, Collisions=1/78=1%
-# Finished Make data base on Mon Sep  5 21:56:23 2022
+# Finished Make data base on Mon Sep  5 23:47:09 2022
 
  
