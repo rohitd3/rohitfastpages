@@ -2,11 +2,11 @@
 keywords: fastai
 description: understanding of objects in java 😶‍🌫️🤐
 title: innovation using object
-toc: false 
-badges: false
+toc: true 
 comments: true
+badges: true
 categories: [java]
-image: images/cowsaybash.png
+image: images/javaobjext.png
 nb_path: _notebooks/2022-09-05-javaobject.ipynb
 layout: notebook
 ---
@@ -20,6 +20,259 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.lang.Math</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">box</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">width</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">height</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">depth</span><span class="p">;</span>
+
+    <span class="c1">// volume of box</span>
+    <span class="kt">double</span> <span class="nf">volume</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">vol</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span><span class="n">height</span> <span class="o">*</span> <span class="n">depth</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Volume &quot;</span><span class="o">+</span> <span class="n">vol</span><span class="p">);</span>
+        <span class="k">return</span>  <span class="n">vol</span><span class="p">;</span>
+        
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">box</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span> <span class="kt">double</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;w h d: &quot;</span> <span class="o">+</span> <span class="n">w</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">h</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">d</span><span class="p">);</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="p">;</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="n">h</span><span class="p">;</span>
+        <span class="n">depth</span> <span class="o">=</span> <span class="n">d</span><span class="p">;</span>
+        
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">box</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;side : &quot;</span> <span class="o">+</span> <span class="n">w</span> <span class="p">);</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="p">;</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="n">w</span><span class="p">;</span>
+        <span class="n">depth</span> <span class="o">=</span> <span class="n">w</span><span class="p">;</span>
+        
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">sphere</span> <span class="p">{</span>
+
+    <span class="kt">double</span> <span class="n">radius</span><span class="p">;</span>
+
+
+    <span class="kt">double</span> <span class="nf">volume</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">vol</span> <span class="o">=</span> <span class="p">((</span><span class="mi">4</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="na">PI</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Volume of sphere: &quot;</span> <span class="o">+</span> <span class="n">vol</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">vol</span><span class="p">;</span>
+
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">sphere</span><span class="p">(</span><span class="kt">double</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;r :&quot;</span> <span class="o">+</span> <span class="n">r</span><span class="p">);</span>
+        <span class="n">radius</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+   
+    <span class="p">}</span>
+   
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Menu</span> <span class="p">{</span>
+    <span class="c1">// Instance Variables</span>
+    <span class="kd">public</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">DEFAULT</span> <span class="o">=</span> <span class="s">&quot;\u001B[0m&quot;</span><span class="p">;</span>  <span class="c1">// Default Terminal Color</span>
+    <span class="kd">public</span> <span class="kd">final</span> <span class="n">String</span><span class="o">[][]</span> <span class="n">COLORS</span> <span class="o">=</span> <span class="p">{</span> <span class="c1">// 2D Array of ANSI Terminal Colors</span>
+        <span class="p">{</span><span class="s">&quot;Default&quot;</span><span class="p">,</span><span class="n">DEFAULT</span><span class="p">},</span>
+        <span class="p">{</span><span class="s">&quot;Red&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[31m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;Green&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[32m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;Yellow&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[33m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;Blue&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[34m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;Purple&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[35m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;Cyan&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[36m&quot;</span><span class="p">},</span> 
+        <span class="p">{</span><span class="s">&quot;White&quot;</span><span class="p">,</span> <span class="s">&quot;\u001B[37m&quot;</span><span class="p">},</span> 
+    <span class="p">};</span>
+    <span class="c1">// 2D column location for data</span>
+    <span class="kd">public</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">NAME</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">ANSI</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// ANSI is the &quot;standard&quot; for terminal codes</span>
+    <span class="n">Scanner</span> <span class="n">sc</span><span class="p">;</span> <span class="c1">// available to all inside the menu class</span>
+    <span class="c1">// Constructor on this Object takes control of menu events and actions</span>
+    <span class="kd">public</span> <span class="nf">Menu</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>  <span class="c1">// using Java Scanner Object</span>
+        
+        <span class="k">this</span><span class="p">.</span><span class="na">print</span><span class="p">();</span>  <span class="c1">// print Menu</span>
+        <span class="kt">boolean</span> <span class="n">quit</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">quit</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>  <span class="c1">// scan for Input</span>
+                <span class="kt">int</span> <span class="n">choice</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>  <span class="c1">// using method from Java Scanner Object</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">choice</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">);</span>
+                <span class="n">quit</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">action</span><span class="p">(</span><span class="n">choice</span><span class="p">);</span>  <span class="c1">// take action</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">sc</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> <span class="c1">// error: clear buffer</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span> <span class="o">+</span> <span class="s">&quot;: Not a number, try again.&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Print the menu options to Terminal</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">//System.out.println commands below is used to present a Menu to the user. </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------\n&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Choose from these choices&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------\n&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;1 - Find volume of box&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;2 - Find volume of cube&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;3 - Find volume of sphere&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;0 - Quit&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------\n&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Private method to perform action and return true if action is to quit/exit</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="nf">action</span><span class="p">(</span><span class="kt">int</span> <span class="n">selection</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">boolean</span> <span class="n">quit</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+        <span class="k">switch</span> <span class="p">(</span><span class="n">selection</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// Switch or Switch/Case is Control Flow statement and is used to evaluate the user selection</span>
+            <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>  
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Goodbye, World!&quot;</span><span class="p">);</span>
+                <span class="n">quit</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter width: &quot;</span><span class="p">);</span>
+                <span class="kt">double</span> <span class="n">w</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter height: &quot;</span><span class="p">);</span>
+                <span class="kt">double</span> <span class="n">h</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter depth: &quot;</span><span class="p">);</span>
+                <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">box</span> <span class="n">myrectangle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">box</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+                <span class="n">myrectangle</span><span class="p">.</span><span class="na">volume</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter side length: &quot;</span><span class="p">);</span>
+                <span class="n">w</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">box</span> <span class="n">mycube</span> <span class="o">=</span> <span class="k">new</span> <span class="n">box</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+                <span class="n">mycube</span><span class="p">.</span><span class="na">volume</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter radius length: &quot;</span><span class="p">);</span>
+                <span class="kt">double</span> <span class="n">r</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">sphere</span> <span class="n">mysphere</span> <span class="o">=</span> <span class="k">new</span> <span class="n">sphere</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+                <span class="n">mysphere</span><span class="p">.</span><span class="na">volume</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+                    
+            <span class="k">default</span><span class="p">:</span>
+                <span class="c1">//Prints error message from console</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Unexpected choice, try again.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">DEFAULT</span><span class="p">);</span>  <span class="c1">// make sure to reset color and provide new line</span>
+        <span class="k">return</span> <span class="n">quit</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Static driver/tester method</span>
+    <span class="kd">static</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>  <span class="p">{</span>  
+        <span class="k">new</span> <span class="n">Menu</span><span class="p">();</span> <span class="c1">// starting Menu object</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+<span class="n">Menu</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-------------------------
+
+Choose from these choices
+-------------------------
+
+1 - Find volume of box
+2 - Find volume of cube
+3 - Find volume of sphere
+0 - Quit
+-------------------------
+
+1: 
+Enter width: 
+Enter height: 
+Enter depth: 
+w h d: 10.0 20.0 30.0
+Volume 6000.0
+
+2: 
+Enter side length: 
+side : 10.0
+Volume 1000.0
+
+3: 
+Enter radius length: 
+r :10.0
+Volume of sphere: 4188.790204786391
+
+0: 
+Goodbye, World!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
