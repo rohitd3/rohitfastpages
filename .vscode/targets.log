@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Sep  5 23:47:09 2022
+# Make data base, printed on Sun Sep 11 14:31:24 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ CONDA_PREFIX = /home/rohitde/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-67622564-3f61-4785-aab3-8e93f83490c3.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-18fa0002-7dc2-4831-b09e-630ce6dc0e82.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,7 +71,7 @@ PWD = /home/rohitde/vscode/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/8_interop
+WSL_INTEROP = /run/WSL/381_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -173,9 +173,9 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2080, inode 219427): 35 files, no impossibilities.
+# . (device 2112, inode 219427): 32 files, no impossibilities.
 
-# 35 files, no impossibilities in 1 directories.
+# 32 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -266,6 +266,7 @@ help:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
+ 
 	cat Makefile
 
 # Not a target:
@@ -278,7 +279,6 @@ bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
@@ -304,12 +304,12 @@ convert: .FORCE
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 52 / storage = 551 B / avg = 10 B
-# current buf: size = 8162 B / used = 551 B / count = 52 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 49 / storage = 479 B / avg = 9 B
+# current buf: size = 8162 B / used = 479 B / count = 49 / avg = 9 B
 
-# strcache performance: lookups = 78 / hit rate = 33%
+# strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
-# Load=52/8192=1%, Rehash=0, Collisions=1/78=1%
-# Finished Make data base on Mon Sep  5 23:47:09 2022
+# Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
+# Finished Make data base on Sun Sep 11 14:31:24 2022
 
  
