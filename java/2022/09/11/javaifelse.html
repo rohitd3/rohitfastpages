@@ -120,6 +120,13 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following code blocks demonstrate if, if-else, and if-elseif-else. The print statments explain why each expression is shown or why it is not printed. It is known that when overall boolean is true, the statment is printed. Similarly, if the boolean is false, the statment is not printed.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -127,8 +134,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Boolean</span>
-
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Boolean Expressions</span>
+<span class="c1">// if</span>
 
 <span class="kt">boolean</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 
@@ -170,7 +177,10 @@ the statment is printed since the value is already set to true
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Boolean Expressions continued</span>
+<span class="c1">// if-else</span>
+
+<span class="kt">boolean</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
 
 <span class="k">if</span><span class="p">(</span><span class="n">value</span> <span class="o">==</span> <span class="kc">true</span><span class="p">){</span>
@@ -199,6 +209,61 @@ the statment is printed since the value is already set to true
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>else this statment is printed since the value is not true
 else this statment is printed since the value is equal to false
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// if-else if-else</span>
+
+<span class="kt">boolean</span> <span class="n">value1</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">value2</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">value1</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">value2</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;false!&quot;</span><span class="p">);</span> 
+    <span class="c1">// statment is not printed because the overall expression is false</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">value1</span> <span class="o">&amp;&amp;</span> <span class="n">value2</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;false!&quot;</span><span class="p">);</span>
+    <span class="c1">// statment is not printed because the overall expression is false</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">value1</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">value2</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;false!&quot;</span><span class="p">);</span>
+    <span class="c1">// statment is not printed because the overall expression is false</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">value1</span> <span class="o">||</span> <span class="o">!</span><span class="n">value2</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;false!&quot;</span><span class="p">);</span>
+    <span class="c1">// statment is not printed because the overall expression is false</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;all the expressions are false! this is our last resort&quot;</span><span class="p">);</span>
+    <span class="c1">// statment is not printed because the overall expression is false</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>all the expressions are false! this is our last resort
 </pre>
 </div>
 </div>
