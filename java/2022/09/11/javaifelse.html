@@ -515,11 +515,8 @@ demorgan second law
             <span class="n">value</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">60</span> <span class="o">&amp;&amp;</span> <span class="n">grade</span> <span class="o">&lt;</span> <span class="mi">70</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">value</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">grade</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">grade</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">)</span>
             <span class="n">value</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
         <span class="k">switch</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//switch case with values</span>
             <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
@@ -536,9 +533,8 @@ demorgan second law
             <span class="k">case</span> <span class="mi">5</span><span class="p">:</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;F&quot;</span><span class="p">);</span>
                 <span class="k">break</span><span class="p">;</span>
-            <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;number not in range&quot;</span><span class="p">);</span>
-                <span class="k">break</span><span class="p">;</span>
+            <span class="k">default</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;not number assigned correctly&quot;</span><span class="p">);</span>
 
         <span class="p">}</span>
 
