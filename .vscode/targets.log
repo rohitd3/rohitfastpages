@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Sep 13 09:50:58 2022
+# Make data base, printed on Mon Sep 19 21:48:06 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ CONDA_PREFIX = /home/rohitde/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-2164b78e-e095-4a17-881b-1c3d4a6e7875.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-de3e5403-7ed9-45f8-a6e6-2c8a5e560952.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,11 +71,11 @@ PWD = /home/rohitde/vscode/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/153_interop
+WSL_INTEROP = /run/WSL/297_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
-WT_SESSION = 483ce366-dfb9-40de-9906-a9ccf4a5cf27
+WT_SESSION = aa47b7d9-abf3-4aff-9a1f-8fdf3bb4a0be
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -277,12 +277,12 @@ help:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
@@ -314,6 +314,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Tue Sep 13 09:50:58 2022
+# Finished Make data base on Mon Sep 19 21:48:06 2022
 
  
