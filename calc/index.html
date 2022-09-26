@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>About Me | rohitd3’s fastpages</title>
+<title>Calculator | rohitd3’s fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="About Me" />
+<meta property="og:title" content="Calculator" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="my fastpages lets gooo" />
 <meta property="og:description" content="my fastpages lets gooo" />
-<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/about/" />
-<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/about/" />
+<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/calc/" />
+<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/calc/" />
 <meta property="og:site_name" content="rohitd3’s fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About Me" />
+<meta property="twitter:title" content="Calculator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"my fastpages lets gooo","headline":"About Me","name":"rohitd3’s fastpages","url":"https://rohitd3.github.io/rohitfastpages/about/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"my fastpages lets gooo","headline":"Calculator","url":"https://rohitd3.github.io/rohitfastpages/calc/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/rohitfastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rohitd3.github.io/rohitfastpages/feed.xml" title="rohitd3's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/rohitfastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,20 +69,58 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <html>
-<body>
+        <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Calculator </title>
+    <meta name="description" content="This is a calculator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+
+  <body>
+
+    <form>
+      Value 1: <input type="text" id="value1">
+      <br><br>
+      Value 2: <input type="text" id="value2">
+      <br><br>
+      Operator: 
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+      </select>
+      <button type="button" onclick="calc()">Calculate</button>
+    </form>
+    <div id="results"></div>
+  </body>
+
+  <script>
+    function calc() {
+      var a = parseInt(document.querySelector("#value1").value);
+      var b = parseInt(document.querySelector("#value2").value);
+      var op = document.querySelector("#operator").value;
+      var calculate;
+
+      if (op == "add") {
+        calculate = a + b;
+      } else if (op == "muly") {
+        calculate = a * b;
+      } else if (op == "sub") {
+        calculate = a - b;
+      } else if (op == "div") {
+        calculate = a / b;
+      }
+
+      // console.log(calculate);
+      document.querySelector("#results").innerHTML = calculate;
+    } 
+  </script>
 
 
-<style>
-p.ex2 {
-  font-size: 30px;
-}
-</style>    
-<center><p class="ex2">Hi! I am Rohit and am of the class of 2023. I am so excited for senior year in AP Computer Science A!!</p></center>
-
-<center><img src="https://user-images.githubusercontent.com/44128572/187344381-e1b04d7c-357d-4f4e-a33c-e5bdb4711991.png" alt="goated group" class="center"> </center>
-
-</body>
 </html>
       </div>
     </main><footer class="site-footer h-card">
