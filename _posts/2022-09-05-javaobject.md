@@ -248,18 +248,8 @@ Choose from these choices
 Enter width: 
 Enter height: 
 Enter depth: 
-w h d: 10.0 20.0 30.0
-Volume 6000.0
-
-2: 
-Enter side length: 
-side : 10.0
-Volume 1000.0
-
-3: 
-Enter radius length: 
-r :10.0
-Volume of sphere: 4188.790204786391
+w h d: 2.0 3.0 4.0
+Volume 24.0
 
 0: 
 Goodbye, World!

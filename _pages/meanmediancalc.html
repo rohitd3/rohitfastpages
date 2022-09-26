@@ -1,0 +1,60 @@
+---
+layout: default
+permalink: /calc/
+title: Calculator
+---
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Calculator </title>
+    <meta name="description" content="This is a calculator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+
+  <body>
+
+    <form>
+      Value 1: <input type="text" id="value1">
+      <br><br>
+      Value 2: <input type="text" id="value2">
+      <br><br>
+      Operator: 
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+      </select>
+      <button type="button" onclick="calc()">Calculate</button>
+    </form>
+    <div id="results"></div>
+  </body>
+
+  <script>
+    function calc() {
+      var a = parseInt(document.querySelector("#value1").value);
+      var b = parseInt(document.querySelector("#value2").value);
+      var op = document.querySelector("#operator").value;
+      var calculate;
+
+      if (op == "add") {
+        calculate = a + b;
+      } else if (op == "muly") {
+        calculate = a * b;
+      } else if (op == "sub") {
+        calculate = a - b;
+      } else if (op == "div") {
+        calculate = a / b;
+      }
+
+      // console.log(calculate);
+      document.querySelector("#results").innerHTML = calculate;
+    } 
+  </script>
+
+
+</html>
