@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Sep 19 21:48:06 2022
+# Make data base, printed on Sun Sep 25 19:32:05 2022
 
 # Variables
 
@@ -47,7 +45,7 @@ VSCODE_CWD = /mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rohitde/.vscode-server/bin/784b0177c56c607789f9638da7b6bf3230d47a8c/bin/remote-cli:/home/rohitde/.local/bin:/home/rohitde/anaconda3/bin:/home/rohitde/anaconda3/condabin:/path/to/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin
+PATH = /home/rohitde/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7/bin/remote-cli:/home/rohitde/.local/bin:/home/rohitde/anaconda3/bin:/home/rohitde/anaconda3/condabin:/path/to/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
@@ -55,7 +53,7 @@ CONDA_PREFIX = /home/rohitde/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-de3e5403-7ed9-45f8-a6e6-2c8a5e560952.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d63632ba-1f7e-42d1-a3db-44a4defd951b.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,11 +69,11 @@ PWD = /home/rohitde/vscode/rohitfastpages
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/297_interop
+WSL_INTEROP = /run/WSL/8_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
-WT_SESSION = aa47b7d9-abf3-4aff-9a1f-8fdf3bb4a0be
+WT_SESSION = da26145e-c86e-4c14-82b5-5bc72cf39953
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -177,7 +175,7 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2112, inode 219427): 32 files, no impossibilities.
+# . (device 2080, inode 219427): 32 files, no impossibilities.
 
 # 32 files, no impossibilities in 1 directories.
 
@@ -282,8 +280,10 @@ bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 46):
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 	docker-compose exec jekyll /bin/bash
 
 convert: .FORCE
@@ -314,6 +314,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Mon Sep 19 21:48:06 2022
+# Finished Make data base on Sun Sep 25 19:32:05 2022
 
  
