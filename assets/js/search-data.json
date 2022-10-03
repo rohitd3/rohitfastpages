@@ -280,10 +280,10 @@
 
   
       ,"page8": {
-          "title": "JavaScript Soccer RapidAPI",
-          "content": ". Name Homeworld Species . . . . . . . . . . .",
-          "url": "https://rohitd3.github.io/rohitfastpages/FirstRapidAPI/",
-          "relUrl": "/FirstRapidAPI/",
+          "title": "Star Wars Characters",
+          "content": ". Name Homeworld Species . . . . . . . .",
+          "url": "https://rohitd3.github.io/rohitfastpages/starwarsapi/",
+          "relUrl": "/starwarsapi/",
           "date": ""
       }
       
