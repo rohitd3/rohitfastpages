@@ -279,6 +279,17 @@
   
 
   
+      ,"page8": {
+          "title": "JavaScript Soccer RapidAPI",
+          "content": ". Name Homeworld Species . . . . . . . . . . .",
+          "url": "https://rohitd3.github.io/rohitfastpages/FirstRapidAPI/",
+          "relUrl": "/FirstRapidAPI/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -292,7 +303,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rohitd3.github.io/rohitfastpages/robots.txt",

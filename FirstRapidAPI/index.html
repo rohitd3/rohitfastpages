@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Calculator | rohitd3’s fastpages</title>
+<title>JavaScript Soccer RapidAPI | rohitd3’s fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Calculator" />
+<meta property="og:title" content="JavaScript Soccer RapidAPI" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="my fastpages lets gooo" />
 <meta property="og:description" content="my fastpages lets gooo" />
-<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/calc/" />
-<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/calc/" />
+<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/FirstRapidAPI/" />
+<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/FirstRapidAPI/" />
 <meta property="og:site_name" content="rohitd3’s fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Calculator" />
+<meta property="twitter:title" content="JavaScript Soccer RapidAPI" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"my fastpages lets gooo","headline":"Calculator","url":"https://rohitd3.github.io/rohitfastpages/calc/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"my fastpages lets gooo","headline":"JavaScript Soccer RapidAPI","url":"https://rohitd3.github.io/rohitfastpages/FirstRapidAPI/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/rohitfastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rohitd3.github.io/rohitfastpages/feed.xml" title="rohitd3's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/rohitfastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,59 +69,90 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title> Calculator </title>
-    <meta name="description" content="This is a calculator" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-  </head>
+        <article class="post">
 
-  <body>
+  <header class="post-header">
+    <h1 class="post-title">JavaScript Soccer RapidAPI</h1>
+  </header>
 
-    <form>
-      Value 1: <input type="text" id="value1">
-      <br><br>
-      Value 2: <input type="text" id="value2">
-      <br><br>
-      Operator: 
-      <select id="operator">
-        <option value="add">Add</option>
-        <option value="sub">Subtract</option>
-        <option value="mul">Multiply</option>
-        <option value="div">Divide</option>
-      </select>
-      <button type="button" onclick="calc()">Calculate</button>
-    </form>
-    <div id="results"></div>
-  </body>
+  <div class="post-content">
+    <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            color: black;
+        }
+        td:nth-child(odd) {
+            background-color: lightgray;
+        }
+        td:nth-child(even) {
+            background-color: darkgray;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Homeworld</th>
+                <th>Species</th>
+            </tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr>
+        </table>
+        <script>
 
-  <script>
-    function calc() {
-      var a = parseInt(document.querySelector("#value1").value);
-      var b = parseInt(document.querySelector("#value2").value);
-      var op = document.querySelector("#operator").value;
-      var calculate;
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
+            "method": "GET",
+            "headers": {
+                "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
+                "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
+            }
+        };
 
-      if (op == "add") {
-        calculate = a + b;
-      } else if (op == "mul") {
-        calculate = a*b;
-      } else if (op == "sub") {
-        calculate = a - b;
-      } else if (op == "div") {
-        calculate = a / b;
-      }
-
-      // console.log(calculate);
-      document.querySelector("#results").innerHTML = calculate;
-    } 
-  </script>
-
-
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            for (var i = 0; i < 9; i++) {
+                var newDataName = document.createElement("td");
+                newDataName.innerHTML = response[i].name;
+                var newDataHomeworld = document.createElement("td");
+                newDataHomeworld.innerHTML = response[i].homeworld;
+                var newDataSpecies = document.createElement("td");
+                newDataSpecies.innerHTML = response[i].species;
+                $(".data-row").eq(i).append(newDataName)
+                $(".data-row").eq(i).append(newDataHomeworld)
+                $(".data-row").eq(i).append(newDataSpecies)
+            }
+            }
+        );
+        </script>
+    </body>
 </html>
+  </div>
+
+</article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/rohitfastpages/"></data>
