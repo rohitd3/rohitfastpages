@@ -1,7 +1,7 @@
 ---
 layout: page
-title: JavaScript Soccer RapidAPI
-permalink: /FirstRapidAPI/
+title: Star Wars Characters
+permalink: /starwarsapi/
 ---
 <html>
     <head>
@@ -13,7 +13,7 @@ permalink: /FirstRapidAPI/
             margin: auto;
         }
         th {
-            background-color: black;
+            background-color: darkblue;
             color: white;
             padding: 10px;
         }
@@ -22,10 +22,10 @@ permalink: /FirstRapidAPI/
             color: black;
         }
         td:nth-child(odd) {
-            background-color: lightgray;
+            background-color: lightskyblue;
         }
         td:nth-child(even) {
-            background-color: darkgray;
+            background-color: lightseagreen;
         }
     </style>
     <body>
@@ -35,15 +35,8 @@ permalink: /FirstRapidAPI/
                 <th>Homeworld</th>
                 <th>Species</th>
             </tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
-            <tr class = "data-row"></tr>
+            <tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr>
+            <tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr>
         </table>
         <script>
 
@@ -60,7 +53,7 @@ permalink: /FirstRapidAPI/
 
         $.ajax(settings).done(function (response) {
             console.log(response);
-            for (var i = 0; i < 9; i++) {
+            for (var i = 0; i < response.length; i++) {
                 var newDataName = document.createElement("td");
                 newDataName.innerHTML = response[i].name;
                 var newDataHomeworld = document.createElement("td");
