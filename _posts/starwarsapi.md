@@ -40,7 +40,7 @@ permalink: /starwarsapi/
         </table>
         <script>
 
-        const starwars = {
+        const settings = {
             "async": true,
             "crossDomain": true,
             "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
@@ -49,22 +49,17 @@ permalink: /starwarsapi/
                 "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
                 "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
             }
-        }; // object is being intialized and contains 
-        //the url, rapid api key and host, method: GET
+        };
 
-        // ajax lets us to load the data without needing to reload the page
-        $.ajax(starwars).done(function (response) {
-            console.log(response); // main method that requests the data from the server
-            for (var i = 0; i < response.length; i++) { // having i < response.length lets me display all
-                                                        // the data but it depends on how much table space I have
-                
-                var newDataName = document.createElement("td"); // where the data will be shown in the data
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            for (var i = 0; i < response.length; i++) {
+                var newDataName = document.createElement("td");
                 newDataName.innerHTML = response[i].name;
                 var newDataHomeworld = document.createElement("td");
                 newDataHomeworld.innerHTML = response[i].homeworld;
                 var newDataSpecies = document.createElement("td");
                 newDataSpecies.innerHTML = response[i].species;
-
                 $(".data-row").eq(i).append(newDataName)
                 $(".data-row").eq(i).append(newDataHomeworld)
                 $(".data-row").eq(i).append(newDataSpecies)
