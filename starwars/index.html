@@ -10,14 +10,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="my fastpages lets gooo" />
 <meta property="og:description" content="my fastpages lets gooo" />
-<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/starwarsapi/" />
-<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/starwarsapi/" />
+<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/starwars/" />
+<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/starwars/" />
 <meta property="og:site_name" content="rohitd3’s fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Star Wars Characters" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"my fastpages lets gooo","headline":"Star Wars Characters","url":"https://rohitd3.github.io/rohitfastpages/starwarsapi/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"my fastpages lets gooo","headline":"Star Wars Characters","url":"https://rohitd3.github.io/rohitfastpages/starwars/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/rohitfastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rohitd3.github.io/rohitfastpages/feed.xml" title="rohitd3's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/rohitfastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/rohitfastpages/about/">About Me</a><a class="page-link" href="/rohitfastpages/apicars/">Cars</a><a class="page-link" href="/rohitfastpages/calc/">Calculator</a><a class="page-link" href="/rohitfastpages/cbtestprep/">Collegeboard Work</a><a class="page-link" href="/rohitfastpages/homework/">Homework calendar</a><a class="page-link" href="/rohitfastpages/search/">Search</a><a class="page-link" href="/rohitfastpages/starwarsapi/">Star Wars Characters</a><a class="page-link" href="/rohitfastpages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/rohitfastpages/about/">About Me</a><a class="page-link" href="/rohitfastpages/calc/">Calculator</a><a class="page-link" href="/rohitfastpages/carapi/">Mazda Cars</a><a class="page-link" href="/rohitfastpages/cbtestprep/">Collegeboard Work</a><a class="page-link" href="/rohitfastpages/homework/">Homework calendar</a><a class="page-link" href="/rohitfastpages/search/">Search</a><a class="page-link" href="/rohitfastpages/starwars/">Star Wars Characters</a><a class="page-link" href="/rohitfastpages/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -84,7 +84,7 @@ window.onload = wrap_img;
         table {
             border-collapse: collapse;
             margin: auto;
-            background-color: white;    
+            background-color: black;    
         }
         th {
             background-color: black;
@@ -97,13 +97,13 @@ window.onload = wrap_img;
             
         }
         td:nth-child(odd) {
-            background-color: white;
+            background-color: black;
         }
         td:nth-child(even) {
-            background-color: white;
+            background-color: black;
         }
         tr:nth-child(odd) {
-            background-color: white !important;
+            background-color: black !important;
         }
         tr:nth-child(even) {
             background-color: black !important;
@@ -112,51 +112,52 @@ window.onload = wrap_img;
     <body>
         <table>
             <tr>
-                <th>Car Brand</th>
-                <th>Image</th>
-                <th>Source</th>
+                <th>Name</th>
+                <th>Planet</th>
+                <th>Species</th>
             </tr>
             <tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr>
             <tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr><tr class = "data-row"></tr>
         </table>
         <script>
 
-        const settings = {
+        const starwars = {
             "async": true,
             "crossDomain": true,
-            "url": "https://all-cars.p.rapidapi.com/cars/mazda",
+            "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
             "method": "GET",
             "headers": {
                 "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
-                "X-RapidAPI-Host": "all-cars.p.rapidapi.com"
+                "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
             }
-        }; 
+        }; // object is being intialized and contains 
+        //the url, rapid api key and host, method: GET
 
         // ajax lets us to load the data without needing to reload the page
-        $.ajax(settings).done(function (response) {
+        $.ajax(starwars).done(function (response) {
             console.log(response); // main method that requests the data from the server
             for (var i = 0; i < response.length; i++) { // having i < response.length lets me display all
                                                         // the data but it depends on how much table space I have
-                // var img = document.createElement('img');
+                
+                var newDataName = document.createElement("td"); // where the data will be shown in the data
+                newDataName.innerHTML = response[i].name;
+                var newDataHomeworld = document.createElement("td");
+                newDataHomeworld.innerHTML = response[i].homeworld;
+                var newDataSpecies = document.createElement("td");
+                newDataSpecies.innerHTML = response[i].species;
 
-
-                var newDataTitle = document.createElement("td"); // where the data will be shown in the data
-                newDataTitle.innerHTML = response[i].title;
-
-                var img = document.createElement('img');
-                img.src = response[i].img;
-                var newDataSource = document.createElement("td");
-                newDataSource.innerHTML = response[i].source;
-
-                $(".data-row").eq(i).append(newDataTitle)
-                $(".data-row").eq(i).append(img)
-                $(".data-row").eq(i).append(newDataSource)
+                $(".data-row").eq(i).append(newDataName)
+                $(".data-row").eq(i).append(newDataHomeworld)
+                $(".data-row").eq(i).append(newDataSpecies)
             }
             }
         );
         </script>
     </body>
 </html>
+
+
+s1dpDXFEcr6O1h18wJHCpA==SRqoKFJnFhai31pJ
   </div>
 
 </article>

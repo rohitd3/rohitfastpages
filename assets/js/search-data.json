@@ -334,10 +334,10 @@
 
   
       ,"page1": {
-          "title": "Cars",
-          "content": ". Name Planet Species . . . . . . . . s1dpDXFEcr6O1h18wJHCpA==SRqoKFJnFhai31pJ .",
-          "url": "https://rohitd3.github.io/rohitfastpages/apicars/",
-          "relUrl": "/apicars/",
+          "title": "Calculator",
+          "content": "&lt;!DOCTYPE html&gt; . Calculator . Value 1: Value 2: Operator: Add Subtract Multiply Divide Calculate .",
+          "url": "https://rohitd3.github.io/rohitfastpages/calc/",
+          "relUrl": "/calc/",
           "date": ""
       }
       
@@ -345,10 +345,10 @@
 
   
       ,"page2": {
-          "title": "Calculator",
-          "content": "&lt;!DOCTYPE html&gt; . Calculator . Value 1: Value 2: Operator: Add Subtract Multiply Divide Calculate .",
-          "url": "https://rohitd3.github.io/rohitfastpages/calc/",
-          "relUrl": "/calc/",
+          "title": "Mazda Cars",
+          "content": ". Car Brand Image Source . . . . . . . .",
+          "url": "https://rohitd3.github.io/rohitfastpages/carapi/",
+          "relUrl": "/carapi/",
           "date": ""
       }
       
@@ -380,9 +380,9 @@
   
       ,"page9": {
           "title": "Star Wars Characters",
-          "content": ". Car Brand Image Source . . . . . . . .",
-          "url": "https://rohitd3.github.io/rohitfastpages/starwarsapi/",
-          "relUrl": "/starwarsapi/",
+          "content": ". Name Planet Species . . . . . . . . s1dpDXFEcr6O1h18wJHCpA==SRqoKFJnFhai31pJ .",
+          "url": "https://rohitd3.github.io/rohitfastpages/starwars/",
+          "relUrl": "/starwars/",
           "date": ""
       }
       
