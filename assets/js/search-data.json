@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "Lesson 2 Homework - Using Objects",
-            "content": "public int scoreGuess(String guess) { int count = 0; for (int i = 0; i &lt;= secret.length() - guess.length(); i++) { if (secret.substring(i, i + guess.length()).equals(guess)) { count++; } } return count * guess.length(); } . public String findBetterGuess(String guess1, String guess2) { if (scoreGuess(guess1) &gt; scoreGuess(guess2)) { return guess1; } if (scoreGuess(guess2) &gt; scoreGuess(guess1)) { return guess2; } if (guess1.compareTo(guess2) &gt; 0) { return guess1; } return guess2; } .",
+            "content": "public int scoreGuess(String guess) { int count = 0; for (int i = 0; i &lt;= secret.length() - guess.length(); i++) { if (secret.substring(i, i + guess.length()).equals(guess)) { count++; } } return count * guess.length(); } . public String findBetterGuess(String guess1, String guess2) { if (scoreGuess(guess1) &gt; scoreGuess(guess2)) { return guess1; } if (scoreGuess(guess2) &gt; scoreGuess(guess1)) { return guess2; } if (guess1.compareTo(guess2) &gt; 0) { return guess1; } return guess2; } . Notes . Classes are blueprints for creating objects | Objects are instances within a class | Methods: certain set of code that runs a specific task | Class attributes are inherited by objects | Learned about myPainter in Code.org | Non static methods are dot operators | .",
             "url": "https://rohitd3.github.io/rohitfastpages/java/2022/10/25/lesson2hwk.html",
             "relUrl": "/java/2022/10/25/lesson2hwk.html",
             "date": " • Oct 25, 2022"
