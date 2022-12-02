@@ -102,9 +102,23 @@ window.onload = wrap_img;
     </a>
 </div>
 
-          
-          
-          
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/rohitd3/rohitfastpages/master?filepath=_notebooks%2F2022-10-02-api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/rohitd3/rohitfastpages/blob/master/_notebooks/2022-10-02-api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Frohitd3%2Frohitfastpages%2Fblob%2Fmaster%2F_notebooks%2F2022-10-02-api.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
         </div>
       </header>
 
@@ -1311,6 +1325,51 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.io.InputStream</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.HttpURLConnection</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.URL</span><span class="p">;</span>
+
+<span class="kn">import</span> <span class="nn">com.fasterxml.jackson.databind.ObjectMapper</span><span class="p">;</span>
+
+<span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="p">(</span><span class="s">&quot;https://api.api-ninjas.com/v1/cars?model=camry&quot;</span><span class="p">);</span>
+<span class="n">HttpURLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="p">(</span><span class="n">HttpURLConnection</span><span class="p">)</span> <span class="n">url</span><span class="p">.</span><span class="na">openConnection</span><span class="p">();</span>
+<span class="n">connection</span><span class="p">.</span><span class="na">setRequestProperty</span><span class="p">(</span><span class="s">&quot;accept&quot;</span><span class="p">,</span> <span class="s">&quot;application/json&quot;</span><span class="p">);</span>
+<span class="n">InputStream</span> <span class="n">responseStream</span> <span class="o">=</span> <span class="n">connection</span><span class="p">.</span><span class="na">getInputStream</span><span class="p">();</span>
+<span class="n">ObjectMapper</span> <span class="n">mapper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectMapper</span><span class="p">();</span>
+<span class="n">JsonNode</span> <span class="n">root</span> <span class="o">=</span> <span class="n">mapper</span><span class="p">.</span><span class="na">readTree</span><span class="p">(</span><span class="n">responseStream</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">root</span><span class="p">.</span><span class="na">path</span><span class="p">(</span><span class="s">&quot;fact&quot;</span><span class="p">).</span><span class="na">asText</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">import </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">com.fasterxml.jackson.databind.ObjectMapper</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">package com.fasterxml.jackson.databind does not exist</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
@@ -1347,7 +1406,28 @@ window.onload = wrap_img;
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/rohitd3" target="_blank" title="rohitd3"><svg class="svg-icon grey"><use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
 </div>
 
   </div>
