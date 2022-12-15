@@ -124,12 +124,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#Learnings">Learnings </a></li>
-<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
-<ul>
 <li class="toc-entry toc-h3"><a href="#Key-Learning-on-Wrapper-Classes">Key Learning on Wrapper Classes </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
 </ul><!--
@@ -144,18 +140,28 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Learnings">
-<a class="anchor" href="#Learnings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learnings<a class="anchor-link" href="#Learnings"> </a>
-</h3>
+<p>Learnings</p>
 <ul>
 <li>Like an array but length is variable</li>
 <li>Must sue wrapper class</li>
-<li>
-<p>Works with enhanced loops</p>
-</li>
-<li>
-<p>Used with arraylist for primitives</p>
-</li>
+<li>Works with enhanced loops</li>
+<li>Used with arraylist for primitives</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Key-Learning-on-Wrapper-Classes">
+<a class="anchor" href="#Key-Learning-on-Wrapper-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Learning on Wrapper Classes<a class="anchor-link" href="#Key-Learning-on-Wrapper-Classes"> </a>
+</h3>
+<ul>
+<li>Used with arraylist for primitives</li>
+<li>Java auto converts between wrappers and primitives</li>
+<li>An ArrayList cannot directly represent primitive datatypes. In the above example, I wanted an ArrayList of integers. The datatype that I provide is not int - it is instead Integer.</li>
+<li>At a lower level, wrapper classes are classes that encapsulate data types, so that you can create objects of those datatypes. You can only have an ArrayList of objects, so this is one good use case for wrapper classes.</li>
 </ul>
 
 </div>
@@ -230,22 +236,6 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Key-Learning-on-Wrapper-Classes">
-<a class="anchor" href="#Key-Learning-on-Wrapper-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Learning on Wrapper Classes<a class="anchor-link" href="#Key-Learning-on-Wrapper-Classes"> </a>
-</h3>
-<ul>
-<li>Used with arraylist for primitives</li>
-<li>Java auto converts between wrappers and primitives</li>
-<li>An ArrayList cannot directly represent primitive datatypes. In the above example, I wanted an ArrayList of integers. The datatype that I provide is not int - it is instead Integer.</li>
-<li>At a lower level, wrapper classes are classes that encapsulate data types, so that you can create objects of those datatypes. You can only have an ArrayList of objects, so this is one good use case for wrapper classes.</li>
-</ul>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
