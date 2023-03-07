@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Early Seed Award",
-            "content": "static String add(double a, double b) { int a1 = (int) a; int b1 = (int) b; String s1 = Integer.toString(a1); String s2 = Integer.toString(b1); int number0 = Integer.parseInt(s1, 2); int number1 = Integer.parseInt(s2, 2); int sum = number0 + number1; String finalvalue = Integer.toBinaryString(sum); return finalvalue; } System.out.println(add(1,1)); System.out.println(add(0,1)); . 10 1 .",
+            "content": "static String add(int a1, int b1) { String s1 = Integer.toString(a1); String s2 = Integer.toString(b1); int number0 = Integer.parseInt(s1, 2); int number1 = Integer.parseInt(s2, 2); int sum = number0 + number1; String finalvalue = Integer.toBinaryString(sum); return finalvalue; } System.out.println(add(1,1)); System.out.println(add(0,1)); System.out.println(add(1,10)); . 10 1 11 .",
             "url": "https://rohitd3.github.io/rohitfastpages/java/2023/03/06/extraseed.html",
             "relUrl": "/java/2023/03/06/extraseed.html",
             "date": " • Mar 6, 2023"
