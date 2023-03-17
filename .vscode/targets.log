@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Mar 17 10:12:48 2023
+# Make data base, printed on Fri Mar 17 10:19:52 2023
 
 # Variables
 
@@ -59,7 +59,7 @@ CONDA_PREFIX = /home/nathanshih04/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-bf225906-039d-479d-8588-2c512165c238.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-f04a7e8b-7d6b-43d8-bb6c-93ab1480d16f.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -334,6 +334,6 @@ convert: .FORCE
 # strcache performance: lookups = 72 / hit rate = 36%
 # hash-table stats:
 # Load=46/8192=1%, Rehash=0, Collisions=1/72=1%
-# Finished Make data base on Fri Mar 17 10:12:48 2023
+# Finished Make data base on Fri Mar 17 10:19:52 2023
 
  
