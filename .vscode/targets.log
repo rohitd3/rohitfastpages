@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Mar  6 23:05:49 2023
+# Make data base, printed on Fri Mar 17 10:19:52 2023
 
 # Variables
 
@@ -19,25 +17,25 @@ RUBY_VERSION = ruby-2.7.7
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-rvm_path = /home/rohitde/.rvm
+rvm_path = /home/nathanshih04/.rvm
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/rohitde/vscode/rohitfastpages
+CURDIR := /home/nathanshih04/rohitfastpages
 # makefile
 SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin/code
+_ = /home/nathanshih04/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -47,21 +45,21 @@ XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code
+VSCODE_CWD = /mnt/c/Downloaded Apps/Coding Apps/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rohitde/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/rohitde/.rvm/gems/ruby-2.7.7/bin:/home/rohitde/.rvm/gems/ruby-2.7.7@global/bin:/home/rohitde/.rvm/rubies/ruby-2.7.7/bin:/home/rohitde/.local/bin:/home/rohitde/gems/bin:/home/rohitde/gems/bin:/home/rohitde/anaconda3/bin:/home/rohitde/anaconda3/condabin:/path/to/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/sqlite3:/mnt/c/Program Files/GridLAB-D:/mnt/c/Program Files/GridLAB-D/lib:/mnt/c/Program Files/PuTTY:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/deroh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39:/mnt/c/Users/deroh/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/deroh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/deroh/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/rohitde/.rvm/bin:/home/rohitde/.rvm/bin
+PATH = /home/nathanshih04/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/bin/remote-cli:/home/nathanshih04/.rvm/gems/ruby-2.7.7/bin:/home/nathanshih04/.rvm/gems/ruby-2.7.7@global/bin:/home/nathanshih04/.rvm/rubies/ruby-2.7.7/bin:/home/nathanshih04/.local/bin:/home/nathanshih04/gems/bin:/home/nathanshih04/anaconda3/bin:/home/nathanshih04/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0:/mnt/c/windows/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Natha/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Natha/AppData/Local/GitHubDesktop/bin:/mnt/c/Downloaded Apps/Coding Apps/Microsoft VS Code/bin:/snap/bin:/home/nathanshih04/.rvm/bin:/home/nathanshih04/.rvm/bin
 # environment
 rvm_stored_umask = 0022
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
-CONDA_PREFIX = /home/rohitde/anaconda3
+CONDA_PREFIX = /home/nathanshih04/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-a6319d65-d52d-4638-8b11-7961ee9c36ed.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-f04a7e8b-7d6b-43d8-bb6c-93ab1480d16f.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,29 +69,29 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = :0
 # environment
-CONDA_EXE = /home/rohitde/anaconda3/bin/conda
+CONDA_EXE = /home/nathanshih04/anaconda3/bin/conda
 # environment
-rvm_bin_path = /home/rohitde/.rvm/bin
+WSL2_GUI_APPS_ENABLED = 1
 # environment
-PWD = /home/rohitde/vscode/rohitfastpages
+rvm_bin_path = /home/nathanshih04/.rvm/bin
+# environment
+PWD = /home/nathanshih04/rohitfastpages
 # default
 .LOADED := 
 # environment
-GEM_HOME = /home/rohitde/.rvm/gems/ruby-2.7.7
+GEM_HOME = /home/nathanshih04/.rvm/gems/ruby-2.7.7
 # environment
-WSL_INTEROP = /run/WSL/8_interop
+WSL_INTEROP = /run/WSL/12_interop
 # environment
-PULSE_SERVER = /mnt/wslg/PulseServer
-# environment
-WT_SESSION = 3ed3ad40-4bae-45dd-a083-d4e971c44754
+PULSE_SERVER = unix:/mnt/wslg/PulseServer
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/rohitde
+HOME = /home/nathanshih04
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-LOGNAME = rohitde
+LOGNAME = nathanshih04
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -105,7 +103,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 MAKELEVEL := 0
 # environment
-GEM_PATH = /home/rohitde/.rvm/gems/ruby-2.7.7:/home/rohitde/.rvm/gems/ruby-2.7.7@global
+GEM_PATH = /home/nathanshih04/.rvm/gems/ruby-2.7.7:/home/nathanshih04/.rvm/gems/ruby-2.7.7@global
 # environment
 CONDA_DEFAULT_ENV = base
 # default
@@ -113,25 +111,25 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-IRBRC = /home/rohitde/.rvm/rubies/ruby-2.7.7/.irbrc
+IRBRC = /home/nathanshih04/.rvm/rubies/ruby-2.7.7/.irbrc
 # environment
 CONDA_SHLVL = 1
 # environment
-SHLVL = 1
+SHLVL = 0
 # default
 MAKE_VERSION := 4.2.1
 # environment
-USER = rohitde
+USER = nathanshih04
 # makefile
 .DEFAULT_GOAL := help
 # environment
-NAME = Code
+NAME = LAPTOP-TSG4ERSF
 # environment
-rvm_version = 1.29.12 (latest)
+rvm_version = 1.29.12-next (master)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/deroh/.vscode/extensions/ms-vscode-remote.remote-wsl-0.72.0
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Natha/.vscode/extensions/ms-vscode-remote.remote-wsl-0.76.1
 # default
 MAKE_COMMAND := make
 # default
@@ -152,8 +150,6 @@ rvm_user_install_flag = 1
 +F = $(notdir $+)
 # environment
 VSCODE_HANDLES_SIGPIPE = true
-# environment
-WT_PROFILE_ID = {0caa0dad-35be-5f56-a8ff-afceeeaa6101}
 # default
 MAKEFILES := 
 # automatic
@@ -161,13 +157,13 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-CONDA_PYTHON_EXE = /home/rohitde/anaconda3/bin/python
+CONDA_PYTHON_EXE = /home/nathanshih04/anaconda3/bin/python
 # environment
 HOSTTYPE = x86_64
 # automatic
 ^F = $(notdir $^)
 # environment
-rvm_prefix = /home/rohitde
+rvm_prefix = /home/nathanshih04
 # default
 SUFFIXES := 
 # environment
@@ -187,13 +183,11 @@ TERM = xterm-256color
 # environment
 WSL_DISTRO_NAME = Ubuntu
 # environment
-MY_RUBY_HOME = /home/rohitde/.rvm/rubies/ruby-2.7.7
-# environment
-MOTD_SHOWN = update-motd
+MY_RUBY_HOME = /home/nathanshih04/.rvm/rubies/ruby-2.7.7
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=7/115=6%
+# Load=88/1024=9%, Rehash=0, Collisions=7/113=6%
 
 # Pattern-specific Variable Values
 
@@ -201,7 +195,7 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2080, inode 2978): 29 files, no impossibilities.
+# . (device 2080, inode 41303): 29 files, no impossibilities.
 
 # 29 files, no impossibilities in 1 directories.
 
@@ -244,7 +238,7 @@ server-detached: .FORCE
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-03-06 23:05:30.327553588
+#  Last modified 2023-03-15 11:28:01.323203246
 #  File has been updated.
 #  Successfully updated.
 
@@ -278,10 +272,12 @@ quick-build: .FORCE
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 23):
- 
 	docker-compose stop || true;
 	docker build -t fastai/fastpages-jekyll -f _action_files/fastpages-jekyll.Dockerfile .
 	docker-compose build 
+
+ 
+make: *** No rule to make target 'all'.  Stop.
 
 restart-jekyll: .FORCE
 #  Implicit rule search has not been done.
@@ -338,6 +334,6 @@ convert: .FORCE
 # strcache performance: lookups = 72 / hit rate = 36%
 # hash-table stats:
 # Load=46/8192=1%, Rehash=0, Collisions=1/72=1%
-# Finished Make data base on Mon Mar  6 23:05:49 2023
+# Finished Make data base on Fri Mar 17 10:19:52 2023
 
  
