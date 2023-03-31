@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -477,7 +477,7 @@ window.onload = wrap_img;
 <span class="cm">     * Print any array objects from queue</span>
 <span class="cm">     */</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printQueue</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">" count: "</span> <span class="o">+</span> <span class="n">count</span> <span class="o">+</span> <span class="s">", data: "</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">" count: "</span> <span class="o">+</span> <span class="n">count</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span> <span class="s">"Data: "</span><span class="p">);</span>
         <span class="k">for</span> <span class="p">(</span><span class="n">T</span> <span class="n">data</span> <span class="p">:</span> <span class="n">queue</span><span class="p">)</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">data</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
@@ -499,78 +499,28 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="cm">/**</span>
-<span class="cm"> * Driver Class</span>
-<span class="cm"> * Tests queue with string, integers, and mixes of Classes and types</span>
-<span class="cm"> */</span>
-<span class="kd">class</span> <span class="nc">QueueTester</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="c1">// Create iterable Queue of Words</span>
-        <span class="n">Object</span><span class="o">[]</span> <span class="n">words</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[]</span> <span class="p">{</span> <span class="s">"seven"</span><span class="p">,</span> <span class="s">"slimy"</span><span class="p">,</span> <span class="s">"snakes"</span><span class="p">,</span> <span class="s">"sallying"</span><span class="p">,</span> <span class="s">"slowly"</span><span class="p">,</span> <span class="s">"slithered"</span><span class="p">,</span> <span class="s">"southward"</span><span class="p">};</span>
-        <span class="n">QueueManager</span> <span class="n">qWords</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueManager</span><span class="p">(</span><span class="s">"Words"</span><span class="p">,</span> <span class="n">words</span><span class="p">);</span>
-        <span class="n">qWords</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
-
-        <span class="c1">// Create iterable Queue of Integers</span>
-        <span class="n">Object</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">[]</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
-        <span class="n">QueueManager</span> <span class="n">qNums</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueManager</span><span class="p">(</span><span class="s">"Integers"</span><span class="p">,</span> <span class="n">numbers</span> <span class="p">);</span>
-        <span class="n">qNums</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
-
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">QueueTester</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Words count: 7, data: seven slimy snakes sallying slowly slithered southward 
-Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9 
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReverseQueue</span> <span class="p">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">();</span>
-    <span class="n">Object</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">[]</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
-    <span class="n">QueueManager</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueManager</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Numbers"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">);</span>
-    <span class="n">q</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
-
-    <span class="c1">// place elements from Queue into Stack</span>
-    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
-      <span class="n">stack</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">delete</span><span class="p">());</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">();</span>
+      
+      <span class="n">Object</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">[]</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+      
+      <span class="c1">// create a queue manager for the array of integers</span>
+      <span class="n">QueueManager</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueManager</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Numbers"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">);</span>
+      <span class="n">q</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
+  
+      <span class="c1">// place elements from Queue into Stack</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span> <span class="c1">// loop until the queue is empty</span>
+        <span class="n">stack</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">delete</span><span class="p">());</span> <span class="c1">// remove the first element from the queue and add it to the top of the stack</span>
+      <span class="p">}</span>
+  
+      <span class="c1">// place elements from Stack back into Queue</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">stack</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span> <span class="c1">// loop until the stack is empty</span>
+        <span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="na">pop</span><span class="p">());</span> <span class="c1">// remove the top element from the stack and add it to the end of the queue</span>
+      <span class="p">}</span>
+        <span class="n">q</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
     <span class="p">}</span>
-
-    <span class="c1">// place elements from Stack back into Queue</span>
-    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">stack</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
-      <span class="n">q</span><span class="p">.</span><span class="na">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="na">pop</span><span class="p">());</span>
-    <span class="p">}</span>
-
-    <span class="n">q</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
   <span class="p">}</span>
-<span class="p">}</span>
-
 <span class="n">ReverseQueue</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
@@ -584,8 +534,10 @@ Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Numbers count: 5, data: 1 2 3 4 5 
-Numbers count: 5, data: 5 4 3 2 1 
+<pre>Numbers count: 5
+Data: 1 2 3 4 5 
+Numbers count: 5
+Data: 5 4 3 2 1 
 </pre>
 </div>
 </div>
