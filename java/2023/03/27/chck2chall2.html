@@ -159,7 +159,7 @@ window.onload = wrap_img;
                 <span class="n">mergedQueue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
             <span class="p">}</span> 
             <span class="c1">// comparing the smallest element of each queue and adding the smaller one to the merged queue</span>
-            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="na">peek</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">q2</span><span class="p">.</span><span class="na">peek</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="na">peek</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">q2</span><span class="p">.</span><span class="na">peek</span><span class="p">())</span> <span class="p">{</span>
                 <span class="n">mergedQueue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                 <span class="n">mergedQueue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">q2</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
