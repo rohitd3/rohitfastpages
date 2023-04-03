@@ -302,26 +302,39 @@ window.onload = wrap_img;
     <span class="p">}</span>
 
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">selectionSort</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Initialize the currentNode pointer to the first element of the list.</span>
         <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">currentNode</span> <span class="o">=</span> <span class="n">upper</span><span class="p">;</span>
+        
+        <span class="c1">// Loop through the list until the currentNode is null.</span>
         <span class="k">while</span> <span class="p">(</span><span class="n">currentNode</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Set the minNode pointer to the currentNode pointer.</span>
             <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">minNode</span> <span class="o">=</span> <span class="n">currentNode</span><span class="p">;</span>
+            
+            <span class="c1">// Set the innerNode pointer to the next node after the currentNode.</span>
             <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">innerNode</span> <span class="o">=</span> <span class="n">currentNode</span><span class="p">.</span><span class="na">getNext</span><span class="p">();</span>
-    
+            
+            <span class="c1">// Loop through the remaining nodes in the list using the innerNode pointer.</span>
             <span class="k">while</span> <span class="p">(</span><span class="n">innerNode</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Check if the value of the innerNode is smaller than the value of the current minNode.</span>
                 <span class="k">if</span> <span class="p">(((</span><span class="n">Comparable</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="n">innerNode</span><span class="p">.</span><span class="na">getData</span><span class="p">()).</span><span class="na">compareTo</span><span class="p">(</span><span class="n">minNode</span><span class="p">.</span><span class="na">getData</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="c1">// If it is, set the minNode pointer to the innerNode pointer.</span>
                     <span class="n">minNode</span> <span class="o">=</span> <span class="n">innerNode</span><span class="p">;</span>
                 <span class="p">}</span>
+                
+                <span class="c1">// Move the innerNode pointer to the next node in the list.</span>
                 <span class="n">innerNode</span> <span class="o">=</span> <span class="n">innerNode</span><span class="p">.</span><span class="na">getNext</span><span class="p">();</span>
             <span class="p">}</span>
-    
-            <span class="c1">// swap minNode and currentNode data</span>
+            
+            <span class="c1">// Swap the data of the minNode and the currentNode.</span>
             <span class="n">T</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">currentNode</span><span class="p">.</span><span class="na">getData</span><span class="p">();</span>
             <span class="n">currentNode</span><span class="p">.</span><span class="na">setData</span><span class="p">(</span><span class="n">minNode</span><span class="p">.</span><span class="na">getData</span><span class="p">());</span>
             <span class="n">minNode</span><span class="p">.</span><span class="na">setData</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
-    
+            
+            <span class="c1">// Move the currentNode pointer to the next node in the list.</span>
             <span class="n">currentNode</span> <span class="o">=</span> <span class="n">currentNode</span><span class="p">.</span><span class="na">getNext</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
+
 <span class="p">}</span>
     
 
