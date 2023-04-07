@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -181,7 +181,7 @@ window.onload = wrap_img;
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">randomArray</span><span class="p">()</span> <span class="p">{</span>
         <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5000</span><span class="o">]</span><span class="p">;</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">());</span>
+            <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">());</span>
         <span class="p">}</span>
         <span class="k">return</span> <span class="n">array</span><span class="p">;</span>
     <span class="p">}</span>
@@ -253,6 +253,137 @@ window.onload = wrap_img;
 *SELECTION Sort Time: 3681500 nanoseconds
 !!BUBBLE Sort average time: 7278208 nanoseconds
 @@SELECTION sort average time : 4009194 nanoseconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MapTester</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">ARRAY_LENGTH</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Create a HashMap and an integer array of the specified length</span>
+        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">ARRAY_LENGTH</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
+
+        <span class="c1">// Fill the HashMap and the integer array with random integer values</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">ARRAY_LENGTH</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">ARRAY_LENGTH</span><span class="p">);</span>
+            <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+            <span class="n">map</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter a number between 0 and "</span> <span class="o">+</span> <span class="p">(</span><span class="n">ARRAY_LENGTH</span> <span class="o">-</span> <span class="mi">1</span><span class="p">));</span>
+
+        <span class="kt">long</span> <span class="n">mapTotalTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">long</span> <span class="n">binarySearchTotalTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="c1">// Loop 12 times to search for the user-entered number using both methods</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+            <span class="c1">// Call the mapLookup method and track the time taken</span>
+            <span class="kt">long</span> <span class="n">time</span> <span class="o">=</span> <span class="n">mapLookup</span><span class="p">(</span><span class="n">map</span><span class="p">,</span> <span class="n">val</span><span class="p">);</span>
+            <span class="n">mapTotalTime</span> <span class="o">+=</span> <span class="n">time</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Time taken for map lookup is "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">+</span> <span class="s">" milliseconds"</span><span class="p">);</span>
+
+            <span class="c1">// Call the binarySearch method and track the time taken</span>
+            <span class="n">time</span> <span class="o">=</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">val</span><span class="p">);</span>
+            <span class="n">binarySearchTotalTime</span> <span class="o">+=</span> <span class="n">time</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Time taken for binary search is "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">+</span> <span class="s">" milliseconds"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="n">mapAvgTime</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">mapTotalTime</span> <span class="o">/</span> <span class="mi">12</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">binarySearchAvgTime</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">binarySearchTotalTime</span> <span class="o">/</span> <span class="mi">12</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"Average time for map lookup is %.3f nanoseconds%n"</span><span class="p">,</span> <span class="n">mapAvgTime</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">"Average time for binary search is %.3f nanoseconds%n"</span><span class="p">,</span> <span class="n">binarySearchAvgTime</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Define a method to perform a map lookup and return the time taken</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">long</span> <span class="nf">mapLookup</span><span class="p">(</span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span><span class="p">,</span> <span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+        <span class="n">map</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+        <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+        <span class="k">return</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Define a method to perform a binary search and return the time taken</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">long</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">array</span><span class="p">,</span> <span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">high</span> <span class="o">=</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">high</span> <span class="o">&gt;=</span> <span class="n">low</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">==</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+                <span class="k">return</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+        <span class="k">return</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">MapTester</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter a number between 0 and 999999
+Time taken for map lookup is 3292 milliseconds
+Time taken for binary search is 4042 milliseconds
+Time taken for map lookup is 1667 milliseconds
+Time taken for binary search is 2250 milliseconds
+Time taken for map lookup is 2666 milliseconds
+Time taken for binary search is 6041 milliseconds
+Time taken for map lookup is 2084 milliseconds
+Time taken for binary search is 4000 milliseconds
+Time taken for map lookup is 2208 milliseconds
+Time taken for binary search is 3209 milliseconds
+Time taken for map lookup is 1833 milliseconds
+Time taken for binary search is 2542 milliseconds
+Time taken for map lookup is 1625 milliseconds
+Time taken for binary search is 4667 milliseconds
+Time taken for map lookup is 1750 milliseconds
+Time taken for binary search is 4500 milliseconds
+Time taken for map lookup is 1708 milliseconds
+Time taken for binary search is 3500 milliseconds
+Time taken for map lookup is 1458 milliseconds
+Time taken for binary search is 2542 milliseconds
+Time taken for map lookup is 2291 milliseconds
+Time taken for binary search is 3833 milliseconds
+Time taken for map lookup is 1833 milliseconds
+Time taken for binary search is 2708 milliseconds
+Average time for map lookup is 2034.583 nanoseconds
+Average time for binary search is 3652.833 nanoseconds
 </pre>
 </div>
 </div>
