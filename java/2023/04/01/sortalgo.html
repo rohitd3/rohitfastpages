@@ -155,14 +155,14 @@ window.onload = wrap_img;
 
     <span class="c1">// bubble sort with input array</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="c1">// iterate through the array to compare each element with its adjacent element</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">m</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
                 <span class="c1">// if the current element is greater than the adjacent element, swap them</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
-                    <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">;</span>
-                    <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">m</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">m</span><span class="o">]</span><span class="p">;</span>
+                    <span class="n">arr</span><span class="o">[</span><span class="n">m</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+                    <span class="n">arr</span><span class="o">[</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
                     <span class="n">swaps</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment swaps</span>
                 <span class="p">}</span>
                 <span class="n">comparisons</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment comparisons</span>
@@ -172,20 +172,20 @@ window.onload = wrap_img;
 
     <span class="c1">// selection sort with input array</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">selectionSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="c1">// assume the current element is the smallest</span>
-            <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
             <span class="c1">// iterate through the array to find the actual smallest element</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">m</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
                 <span class="c1">// if the current element is smaller than the assumed smallest element, update the index of the smallest element</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">min</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="n">min</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">m</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">min</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">min</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
                 <span class="p">}</span>
                 <span class="n">comparisons</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment comparisons</span>
             <span class="p">}</span>
             <span class="c1">// swap the current element with the smallest element</span>
-            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-            <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">min</span><span class="o">]</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="p">;</span>
+            <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">min</span><span class="o">]</span><span class="p">;</span>
             <span class="n">arr</span><span class="o">[</span><span class="n">min</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
             <span class="n">swaps</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment swaps</span>
         <span class="p">}</span>
@@ -249,80 +249,80 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>~BUBBLE Sort Time: 28069750 nanoseconds
+<pre>~BUBBLE Sort Time: 10673625 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 43918333 nanoseconds
+*SELECTION Sort Time: 4664625 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 14129417 nanoseconds
+~BUBBLE Sort Time: 10507667 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 23826666 nanoseconds
+*SELECTION Sort Time: 4574292 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10553750 nanoseconds
+~BUBBLE Sort Time: 10682167 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5190500 nanoseconds
+*SELECTION Sort Time: 4565917 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10500625 nanoseconds
+~BUBBLE Sort Time: 10549375 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5141583 nanoseconds
+*SELECTION Sort Time: 4582584 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10484042 nanoseconds
+~BUBBLE Sort Time: 10506375 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5532583 nanoseconds
+*SELECTION Sort Time: 4568167 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10508458 nanoseconds
+~BUBBLE Sort Time: 10597375 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5165292 nanoseconds
+*SELECTION Sort Time: 4572958 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10630541 nanoseconds
+~BUBBLE Sort Time: 10490125 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5128541 nanoseconds
+*SELECTION Sort Time: 4567125 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10474458 nanoseconds
+~BUBBLE Sort Time: 10597583 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5149208 nanoseconds
+*SELECTION Sort Time: 4569750 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10643125 nanoseconds
+~BUBBLE Sort Time: 10552792 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5187708 nanoseconds
+*SELECTION Sort Time: 4582125 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10518708 nanoseconds
+~BUBBLE Sort Time: 10619958 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5171292 nanoseconds
+*SELECTION Sort Time: 4575417 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10662625 nanoseconds
+~BUBBLE Sort Time: 10573166 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5252459 nanoseconds
+*SELECTION Sort Time: 4565833 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-~BUBBLE Sort Time: 10894833 nanoseconds
+~BUBBLE Sort Time: 10575250 nanoseconds
 Number of Comparisons: 24995000
 Number of Swaps: 0
-*SELECTION Sort Time: 5435584 nanoseconds
+*SELECTION Sort Time: 4801458 nanoseconds
 Number of Comparisons: 12497500
 Number of Swaps: 5000
-!!BUBBLE Sort average time: 12339194 nanoseconds
-@@SELECTION sort average time : 10008312 nanoseconds
+!!BUBBLE Sort average time: 10577121 nanoseconds
+@@SELECTION sort average time : 4599187 nanoseconds
 </pre>
 </div>
 </div>
