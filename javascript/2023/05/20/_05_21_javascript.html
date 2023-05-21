@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript Practice | rohitd3’s fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="JavaScript Practice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="my fastpages lets gooo" />
+<meta property="og:description" content="my fastpages lets gooo" />
+<link rel="canonical" href="https://rohitd3.github.io/rohitfastpages/javascript/2023/05/20/_05_21_javascript.html" />
+<meta property="og:url" content="https://rohitd3.github.io/rohitfastpages/javascript/2023/05/20/_05_21_javascript.html" />
+<meta property="og:site_name" content="rohitd3’s fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript Practice" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T00:00:00-05:00","datePublished":"2023-05-20T00:00:00-05:00","description":"my fastpages lets gooo","headline":"JavaScript Practice","mainEntityOfPage":{"@type":"WebPage","@id":"https://rohitd3.github.io/rohitfastpages/javascript/2023/05/20/_05_21_javascript.html"},"url":"https://rohitd3.github.io/rohitfastpages/javascript/2023/05/20/_05_21_javascript.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/rohitfastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rohitd3.github.io/rohitfastpages/feed.xml" title="rohitd3's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/rohitfastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/rohitfastpages/">rohitd3&#39;s fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/rohitfastpages/about/">About Me</a><a class="page-link" href="/rohitfastpages/calc/">Calculator</a><a class="page-link" href="/rohitfastpages/carapi/">Mazda Cars</a><a class="page-link" href="/rohitfastpages/cbtestprep/">Collegeboard Work</a><a class="page-link" href="/rohitfastpages/homework/">Homework calendar</a><a class="page-link" href="/rohitfastpages/search/">Search</a><a class="page-link" href="/rohitfastpages/starwars/">Star Wars Characters</a><a class="page-link" href="/rohitfastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript Practice</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-20T00:00:00-05:00" itemprop="datePublished">
+        May 20, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/rohitfastpages/categories/#javascript">javascript</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/rohitd3/rohitfastpages/tree/master/_notebooks/2023_05_21_javascript.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/rohitfastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/rohitd3/rohitfastpages/master?filepath=_notebooks%2F2023_05_21_javascript.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/rohitd3/rohitfastpages/blob/master/_notebooks/2023_05_21_javascript.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Frohitd3%2Frohitfastpages%2Fblob%2Fmaster%2F_notebooks%2F2023_05_21_javascript.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/rohitfastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><body>
+<!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023_05_21_javascript.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+            <span class="c1">#output {</span>
+                <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#f86ddf;</span>
+                <span class="n">padding</span><span class="p">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span>
+                <span class="n">border</span><span class="p">:</span> <span class="mi">40</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#1a334f;</span>
+            <span class="p">}</span>
+        <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"output"</span><span class="o">&gt;</span>
+            <span class="n">Hello</span> <span class="n">world</span><span class="err">!</span>
+        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    
+        <style>
+            #output {
+                background-color: #f86ddf;
+                padding: 50px;
+                border: 40px solid #1a334f;
+            }
+        </style>
+    
+    
+        <div id="output">
+            Hello world!
+        </div>
+    
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+        <span class="n">table</span> <span class="p">{</span>
+            <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
+            <span class="n">margin</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>    
+        <span class="p">}</span>
+        <span class="n">th</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">td</span> <span class="p">{</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Planet</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Species</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span> <span class="k">class</span> <span class="err">= "</span><span class="nc">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span> <span class="k">class</span> <span class="err">= "</span><span class="nc">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;</span>
+        <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+
+        <span class="n">const</span> <span class="n">starwars</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"async"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+            <span class="s2">"crossDomain"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+            <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters"</span><span class="p">,</span>
+            <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+            <span class="s2">"headers"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724"</span><span class="p">,</span>
+                <span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"star-wars-characters.p.rapidapi.com"</span>
+            <span class="p">}</span>
+        <span class="p">};</span> <span class="o">//</span> <span class="nb">object</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">intialized</span> <span class="ow">and</span> <span class="n">contains</span> 
+        <span class="o">//</span><span class="n">the</span> <span class="n">url</span><span class="p">,</span> <span class="n">rapid</span> <span class="n">api</span> <span class="n">key</span> <span class="ow">and</span> <span class="n">host</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="n">GET</span>
+
+        <span class="o">//</span> <span class="n">ajax</span> <span class="n">lets</span> <span class="n">us</span> <span class="n">to</span> <span class="n">load</span> <span class="n">the</span> <span class="n">data</span> <span class="n">without</span> <span class="n">needing</span> <span class="n">to</span> <span class="n">reload</span> <span class="n">the</span> <span class="n">page</span>
+        <span class="err">$</span><span class="o">.</span><span class="n">ajax</span><span class="p">(</span><span class="n">starwars</span><span class="p">)</span><span class="o">.</span><span class="n">done</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">response</span><span class="p">);</span> <span class="o">//</span> <span class="n">main</span> <span class="n">method</span> <span class="n">that</span> <span class="n">requests</span> <span class="n">the</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">server</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">response</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="n">having</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">response</span><span class="o">.</span><span class="n">length</span> <span class="n">lets</span> <span class="n">me</span> <span class="n">display</span> <span class="nb">all</span>
+                                                        <span class="o">//</span> <span class="n">the</span> <span class="n">data</span> <span class="n">but</span> <span class="n">it</span> <span class="n">depends</span> <span class="n">on</span> <span class="n">how</span> <span class="n">much</span> <span class="n">table</span> <span class="n">space</span> <span class="n">I</span> <span class="n">have</span>
+                
+                <span class="n">var</span> <span class="n">newDataName</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span> <span class="o">//</span> <span class="n">where</span> <span class="n">the</span> <span class="n">data</span> <span class="n">will</span> <span class="n">be</span> <span class="n">shown</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">data</span>
+                <span class="n">newDataName</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">;</span>
+                <span class="n">var</span> <span class="n">newDataHomeworld</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span>
+                <span class="n">newDataHomeworld</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">homeworld</span><span class="p">;</span>
+                <span class="n">var</span> <span class="n">newDataSpecies</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span>
+                <span class="n">newDataSpecies</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">species</span><span class="p">;</span>
+
+                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataName</span><span class="p">)</span>
+                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataHomeworld</span><span class="p">)</span>
+                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataSpecies</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">);</span>
+        <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            background-color: black;    
+        }
+        th {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            color: white;
+            
+        }
+        td:nth-child(odd) {
+            background-color: black;
+        }
+        td:nth-child(even) {
+            background-color: black;
+        }
+        tr:nth-child(odd) {
+            background-color: black !important;
+        }
+        tr:nth-child(even) {
+            background-color: black !important;
+        }
+    </style>
+    
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Planet</th>
+                <th>Species</th>
+            </tr>
+            <tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+            <tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+<tr class="data-row"></tr>
+        </table>
+        <script>
+
+        const starwars = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
+            "method": "GET",
+            "headers": {
+                "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
+                "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
+            }
+        }; // object is being intialized and contains 
+        //the url, rapid api key and host, method: GET
+
+        // ajax lets us to load the data without needing to reload the page
+        $.ajax(starwars).done(function (response) {
+            console.log(response); // main method that requests the data from the server
+            for (var i = 0; i < response.length; i++) { // having i < response.length lets me display all
+                                                        // the data but it depends on how much table space I have
+                
+                var newDataName = document.createElement("td"); // where the data will be shown in the data
+                newDataName.innerHTML = response[i].name;
+                var newDataHomeworld = document.createElement("td");
+                newDataHomeworld.innerHTML = response[i].homeworld;
+                var newDataSpecies = document.createElement("td");
+                newDataSpecies.innerHTML = response[i].species;
+
+                $(".data-row").eq(i).append(newDataName)
+                $(".data-row").eq(i).append(newDataHomeworld)
+                $(".data-row").eq(i).append(newDataSpecies)
+            }
+            }
+        );
+        </script>
+    
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text/css"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="n">language</span><span class="o">=</span><span class="s2">"javascript"</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+        <span class="n">table</span> <span class="p">{</span>
+            <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
+            <span class="n">margin</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>    
+        <span class="p">}</span>
+        <span class="n">th</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">td</span> <span class="p">{</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">table</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"starWarsTable"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Planet</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Species</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tbody</span><span class="o">&gt;&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+        <span class="err">$</span><span class="p">(</span><span class="n">document</span><span class="p">)</span><span class="o">.</span><span class="n">ready</span><span class="p">(</span><span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">var</span> <span class="n">starWarsAPI</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">"async"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">"crossDomain"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters"</span><span class="p">,</span>
+                <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+                <span class="s2">"headers"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724"</span><span class="p">,</span>
+                    <span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"star-wars-characters.p.rapidapi.com"</span>
+                <span class="p">}</span>
+            <span class="p">};</span>
+
+            <span class="err">$</span><span class="o">.</span><span class="n">ajax</span><span class="p">(</span><span class="n">starWarsAPI</span><span class="p">)</span><span class="o">.</span><span class="n">done</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">response</span><span class="p">);</span>
+                <span class="n">var</span> <span class="n">table</span> <span class="o">=</span> <span class="err">$</span><span class="p">(</span><span class="s1">'#starWarsTable'</span><span class="p">)</span><span class="o">.</span><span class="n">DataTable</span><span class="p">({</span>
+                    <span class="n">data</span><span class="p">:</span> <span class="n">response</span><span class="p">,</span>
+                    <span class="n">columns</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'name'</span> <span class="p">},</span>
+                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'homeworld'</span> <span class="p">},</span>
+                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'species'</span> <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">});</span>
+                
+
+                <span class="err">$</span><span class="p">(</span><span class="s1">'#starWarsTable thead th'</span><span class="p">)</span><span class="o">.</span><span class="n">each</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="n">var</span> <span class="n">title</span> <span class="o">=</span> <span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">();</span>
+                    <span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">)</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="s1">'&lt;input type="text" placeholder="Search '</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s1">'" /&gt;'</span><span class="p">);</span>
+                <span class="p">});</span>
+                
+                <span class="n">table</span><span class="o">.</span><span class="n">columns</span><span class="p">()</span><span class="o">.</span><span class="n">every</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="n">var</span> <span class="n">that</span> <span class="o">=</span> <span class="n">this</span><span class="p">;</span>
+
+                    <span class="err">$</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="n">this</span><span class="o">.</span><span class="n">header</span><span class="p">())</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s1">'keyup change'</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">that</span><span class="o">.</span><span class="n">search</span><span class="p">()</span> <span class="o">!==</span> <span class="n">this</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">that</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">();</span>
+                        <span class="p">}</span>
+                    <span class="p">});</span>
+                <span class="p">});</span>
+            <span class="p">});</span>
+        <span class="p">});</span>
+    <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            background-color: black;    
+        }
+        th {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            color: white;
+            
+        }
+        td:nth-child(odd) {
+            background-color: black;
+        }
+        td:nth-child(even) {
+            background-color: black;
+        }
+        tr:nth-child(odd) {
+            background-color: black !important;
+        }
+        tr:nth-child(even) {
+            background-color: black !important;
+        }
+    </style>
+
+
+    <table id="starWarsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Planet</th>
+                <th>Species</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        $(document).ready(function() {
+            var starWarsAPI = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
+                "method": "GET",
+                "headers": {
+                    "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
+                    "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
+                }
+            };
+
+            $.ajax(starWarsAPI).done(function (response) {
+                console.log(response);
+                var table = $('#starWarsTable').DataTable({
+                    data: response,
+                    columns: [
+                        { data: 'name' },
+                        { data: 'homeworld' },
+                        { data: 'species' }
+                    ]
+                });
+                
+                // Add search features
+                $('#starWarsTable thead th').each(function () {
+                    var title = $(this).text();
+                    $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                });
+                
+                table.columns().every(function () {
+                    var that = this;
+
+                    $('input', this.header()).on('keyup change', function () {
+                        if (that.search() !== this.value) {
+                            that.search(this.value).draw();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+</body>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="rohitd3/rohitfastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/rohitfastpages/javascript/2023/05/20/_05_21_javascript.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/rohitfastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://rohitd3.github.io/rohitfastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>my fastpages lets gooo</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rohitfastpages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
