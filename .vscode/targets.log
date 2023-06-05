@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Thu Apr 27 20:20:00 2023
+# Make data base, printed on Mon Jun  5 02:41:59 2023
 
 # Variables
 
@@ -44,7 +44,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.dIE07Qcxsl/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1GZU6SCV88/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -146,7 +146,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/rohitde/opt/anaconda3
 # environment
-VSCODE_PID = 2770
+VSCODE_PID = 1713
 # environment
 _CE_CONDA = 
 # environment
@@ -160,7 +160,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 11424779): 29 files, no impossibilities.
+# . (device 16777230, inode 11424779): 29 files, no impossibilities.
 
 # 29 files, no impossibilities in 1 directories.
 
@@ -320,6 +320,6 @@ make: *** No rule to make target `all'.  Stop.
 
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Apr 27 20:20:01 2023
+# Finished Make data base on Mon Jun  5 02:41:59 2023
 
  
