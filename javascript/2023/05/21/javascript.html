@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -141,23 +141,23 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
-            <span class="c1">#output {</span>
-                <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#f86ddf;</span>
-                <span class="n">padding</span><span class="p">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span>
-                <span class="n">border</span><span class="p">:</span> <span class="mi">40</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#1a334f;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="p">#</span><span class="nn">output</span> <span class="p">{</span>
+                <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f86ddf</span><span class="p">;</span>
+                <span class="k">padding</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+                <span class="k">border</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#1a334f</span><span class="p">;</span>
             <span class="p">}</span>
-        <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"output"</span><span class="o">&gt;</span>
-            <span class="n">Hello</span> <span class="n">world</span><span class="err">!</span>
-        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"output"</span><span class="p">&gt;</span>
+            Hello world!
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 
     </div>
@@ -205,312 +205,112 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
-        <span class="n">table</span> <span class="p">{</span>
-            <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
-            <span class="n">margin</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>    
-        <span class="p">}</span>
-        <span class="n">th</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
-            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">td</span> <span class="p">{</span>
-            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
-            
-        <span class="p">}</span>
-        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Planet</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Species</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">tr</span> <span class="k">class</span> <span class="err">= "</span><span class="nc">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;</span>
-            <span class="o">&lt;</span><span class="n">tr</span> <span class="k">class</span> <span class="err">= "</span><span class="nc">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;&lt;tr class = "</span><span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="s2">"&gt;&lt;/tr&gt;</span>
-        <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 
-        <span class="n">const</span> <span class="n">starwars</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">"async"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-            <span class="s2">"crossDomain"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-            <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters"</span><span class="p">,</span>
-            <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
-            <span class="s2">"headers"</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724"</span><span class="p">,</span>
-                <span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"star-wars-characters.p.rapidapi.com"</span>
-            <span class="p">}</span>
-        <span class="p">};</span> <span class="o">//</span> <span class="nb">object</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">intialized</span> <span class="ow">and</span> <span class="n">contains</span> 
-        <span class="o">//</span><span class="n">the</span> <span class="n">url</span><span class="p">,</span> <span class="n">rapid</span> <span class="n">api</span> <span class="n">key</span> <span class="ow">and</span> <span class="n">host</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="n">GET</span>
-
-        <span class="o">//</span> <span class="n">ajax</span> <span class="n">lets</span> <span class="n">us</span> <span class="n">to</span> <span class="n">load</span> <span class="n">the</span> <span class="n">data</span> <span class="n">without</span> <span class="n">needing</span> <span class="n">to</span> <span class="n">reload</span> <span class="n">the</span> <span class="n">page</span>
-        <span class="err">$</span><span class="o">.</span><span class="n">ajax</span><span class="p">(</span><span class="n">starwars</span><span class="p">)</span><span class="o">.</span><span class="n">done</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">response</span><span class="p">);</span> <span class="o">//</span> <span class="n">main</span> <span class="n">method</span> <span class="n">that</span> <span class="n">requests</span> <span class="n">the</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">server</span>
-            <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">response</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="n">having</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">response</span><span class="o">.</span><span class="n">length</span> <span class="n">lets</span> <span class="n">me</span> <span class="n">display</span> <span class="nb">all</span>
-                                                        <span class="o">//</span> <span class="n">the</span> <span class="n">data</span> <span class="n">but</span> <span class="n">it</span> <span class="n">depends</span> <span class="n">on</span> <span class="n">how</span> <span class="n">much</span> <span class="n">table</span> <span class="n">space</span> <span class="n">I</span> <span class="n">have</span>
-                
-                <span class="n">var</span> <span class="n">newDataName</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span> <span class="o">//</span> <span class="n">where</span> <span class="n">the</span> <span class="n">data</span> <span class="n">will</span> <span class="n">be</span> <span class="n">shown</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">data</span>
-                <span class="n">newDataName</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">;</span>
-                <span class="n">var</span> <span class="n">newDataHomeworld</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span>
-                <span class="n">newDataHomeworld</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">homeworld</span><span class="p">;</span>
-                <span class="n">var</span> <span class="n">newDataSpecies</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span>
-                <span class="n">newDataSpecies</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">species</span><span class="p">;</span>
-
-                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataName</span><span class="p">)</span>
-                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataHomeworld</span><span class="p">)</span>
-                <span class="err">$</span><span class="p">(</span><span class="s2">".data-row"</span><span class="p">)</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newDataSpecies</span><span class="p">)</span>
-            <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">);</span>
-        <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
     
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <span class="c">&lt;!-- DataTables CSS --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"</span><span class="p">&gt;</span>
     
-    <style>
-        table {
-            border-collapse: collapse;
-            margin: auto;
-            background-color: black;    
-        }
-        th {
-            background-color: black;
-            color: white;
-            padding: 10px;
-        }
-        td {
-            padding: 10px;
-            color: white;
-            
-        }
-        td:nth-child(odd) {
-            background-color: black;
-        }
-        td:nth-child(even) {
-            background-color: black;
-        }
-        tr:nth-child(odd) {
-            background-color: black !important;
-        }
-        tr:nth-child(even) {
-            background-color: black !important;
-        }
-    </style>
+    <span class="c">&lt;!-- DataTables JavaScript --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span> <span class="na">language</span><span class="o">=</span><span class="s">"javascript"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="nt">table</span> <span class="p">{</span>
+            <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
+            <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>    
+        <span class="p">}</span>
+        <span class="nt">th</span> <span class="p">{</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+            <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+            <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nt">td</span> <span class="p">{</span>
+            <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nt">td</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nt">td</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nt">tr</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span> <span class="cp">!important</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nt">tr</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span> <span class="cp">!important</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    # Create an empty table with the id "starWarsTable"
+    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">"starWarsTable"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Planet<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Species<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
     
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Planet</th>
-                <th>Species</th>
-            </tr>
-            <tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-            <tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-<tr class="data-row"></tr>
-        </table>
-        <script>
-
-        const starwars = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
-            "method": "GET",
-            "headers": {
-                "X-RapidAPI-Key": "bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724",
-                "X-RapidAPI-Host": "star-wars-characters.p.rapidapi.com"
-            }
-        }; // object is being intialized and contains 
-        //the url, rapid api key and host, method: GET
-
-        // ajax lets us to load the data without needing to reload the page
-        $.ajax(starwars).done(function (response) {
-            console.log(response); // main method that requests the data from the server
-            for (var i = 0; i < response.length; i++) { // having i < response.length lets me display all
-                                                        // the data but it depends on how much table space I have
-                
-                var newDataName = document.createElement("td"); // where the data will be shown in the data
-                newDataName.innerHTML = response[i].name;
-                var newDataHomeworld = document.createElement("td");
-                newDataHomeworld.innerHTML = response[i].homeworld;
-                var newDataSpecies = document.createElement("td");
-                newDataSpecies.innerHTML = response[i].species;
-
-                $(".data-row").eq(i).append(newDataName)
-                $(".data-row").eq(i).append(newDataHomeworld)
-                $(".data-row").eq(i).append(newDataSpecies)
-            }
-            }
-        );
-        </script>
-    
-
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text/css"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="n">language</span><span class="o">=</span><span class="s2">"javascript"</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
-        <span class="n">table</span> <span class="p">{</span>
-            <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
-            <span class="n">margin</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>    
-        <span class="p">}</span>
-        <span class="n">th</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
-            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">td</span> <span class="p">{</span>
-            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
-            <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
-            
-        <span class="p">}</span>
-        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">td</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">tr</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">even</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">black</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">table</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"starWarsTable"</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Planet</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Species</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-        <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">tbody</span><span class="o">&gt;&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-        <span class="err">$</span><span class="p">(</span><span class="n">document</span><span class="p">)</span><span class="o">.</span><span class="n">ready</span><span class="p">(</span><span class="n">function</span><span class="p">()</span> <span class="p">{</span>
-            <span class="n">var</span> <span class="n">starWarsAPI</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="s2">"async"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-                <span class="s2">"crossDomain"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-                <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters"</span><span class="p">,</span>
-                <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
-                <span class="s2">"headers"</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724"</span><span class="p">,</span>
-                    <span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"star-wars-characters.p.rapidapi.com"</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="err">#</span> <span class="nx">Create</span> <span class="nx">an</span> <span class="nx">object</span> <span class="k">for</span> <span class="nx">the</span> <span class="nx">Star</span> <span class="nx">Wars</span> <span class="nx">API</span> <span class="nx">request</span> <span class="nx">configuration</span>
+            <span class="kd">var</span> <span class="nx">starWarsAPI</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">"async"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="s2">"crossDomain"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters"</span><span class="p">,</span>
+                <span class="s2">"method"</span><span class="o">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+                <span class="s2">"headers"</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="s2">"X-RapidAPI-Key"</span><span class="o">:</span> <span class="s2">"bf09b94566msh22c602dfe97bd97p19c2fajsn1d42e34f8724"</span><span class="p">,</span>
+                    <span class="s2">"X-RapidAPI-Host"</span><span class="o">:</span> <span class="s2">"star-wars-characters.p.rapidapi.com"</span>
                 <span class="p">}</span>
             <span class="p">};</span>
 
-            <span class="c1"># STAR WARS API</span>
-            <span class="err">$</span><span class="o">.</span><span class="n">ajax</span><span class="p">(</span><span class="n">starWarsAPI</span><span class="p">)</span><span class="o">.</span><span class="n">done</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">response</span><span class="p">);</span>
-                <span class="n">var</span> <span class="n">table</span> <span class="o">=</span> <span class="err">$</span><span class="p">(</span><span class="s1">'#starWarsTable'</span><span class="p">)</span><span class="o">.</span><span class="n">DataTable</span><span class="p">({</span>
-                    <span class="n">data</span><span class="p">:</span> <span class="n">response</span><span class="p">,</span>
-                    <span class="n">columns</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'name'</span> <span class="p">},</span>
-                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'homeworld'</span> <span class="p">},</span>
-                        <span class="p">{</span> <span class="n">data</span><span class="p">:</span> <span class="s1">'species'</span> <span class="p">}</span>
+            <span class="err">#</span> <span class="nx">send</span> <span class="nx">request</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">Star</span> <span class="nx">Wars</span> <span class="nx">API</span>
+            <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">(</span><span class="nx">starWarsAPI</span><span class="p">).</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+                
+                <span class="err">#</span> <span class="nx">DataTable</span> <span class="nx">using</span> <span class="nx">the</span> <span class="nx">response</span> <span class="nx">data</span>
+                <span class="kd">var</span> <span class="nx">table</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#starWarsTable'</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
+                    <span class="nx">data</span><span class="o">:</span> <span class="nx">response</span><span class="p">,</span>
+                    <span class="nx">columns</span><span class="o">:</span> <span class="p">[</span>
+                        <span class="p">{</span> <span class="nx">data</span><span class="o">:</span> <span class="s1">'name'</span> <span class="p">},</span>       <span class="c1">// Column 1: Name</span>
+                        <span class="p">{</span> <span class="nx">data</span><span class="o">:</span> <span class="s1">'homeworld'</span> <span class="p">},</span>  <span class="c1">// Column 2: Planet</span>
+                        <span class="p">{</span> <span class="nx">data</span><span class="o">:</span> <span class="s1">'species'</span> <span class="p">}</span>     <span class="c1">// Column 3: Species</span>
                     <span class="p">]</span>
                 <span class="p">});</span>
-                
 
-                <span class="err">$</span><span class="p">(</span><span class="s1">'#starWarsTable thead th'</span><span class="p">)</span><span class="o">.</span><span class="n">each</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
-                    <span class="n">var</span> <span class="n">title</span> <span class="o">=</span> <span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">();</span>
-                    <span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">)</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="s1">'&lt;input type="text" placeholder="Search '</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s1">'" /&gt;'</span><span class="p">);</span>
+                <span class="err">#</span>  <span class="nx">Add</span> <span class="nx">search</span> <span class="nx">inputs</span> <span class="nx">to</span> <span class="nx">each</span> <span class="nx">table</span> <span class="nx">column</span> <span class="nx">header</span>
+                <span class="nx">$</span><span class="p">(</span><span class="s1">'#starWarsTable thead th'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="kd">var</span> <span class="nx">title</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">text</span><span class="p">();</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'&lt;input type="text" placeholder="Search '</span> <span class="o">+</span> <span class="nx">title</span> <span class="o">+</span> <span class="s1">'" /&gt;'</span><span class="p">);</span>
                 <span class="p">});</span>
                 
-                <span class="n">table</span><span class="o">.</span><span class="n">columns</span><span class="p">()</span><span class="o">.</span><span class="n">every</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
-                    <span class="n">var</span> <span class="n">that</span> <span class="o">=</span> <span class="n">this</span><span class="p">;</span>
+                <span class="err">#</span>  <span class="nx">Apply</span> <span class="nx">the</span> <span class="nx">search</span> <span class="nx">functionality</span> <span class="k">for</span> <span class="nx">each</span> <span class="nx">column</span>
+                <span class="nx">table</span><span class="p">.</span><span class="nx">columns</span><span class="p">().</span><span class="nx">every</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
 
-                    <span class="err">$</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="n">this</span><span class="o">.</span><span class="n">header</span><span class="p">())</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s1">'keyup change'</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
-                        <span class="k">if</span> <span class="p">(</span><span class="n">that</span><span class="o">.</span><span class="n">search</span><span class="p">()</span> <span class="o">!==</span> <span class="n">this</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-                            <span class="n">that</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">();</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">header</span><span class="p">()).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'keyup change'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">search</span><span class="p">()</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="nx">that</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
+
+<span class="err">#</span> <span class="nx">event</span> <span class="nx">listeners</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">search</span> <span class="nx">inputs</span> <span class="nx">using</span> <span class="nx">the</span> <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'keyup change'</span><span class="p">)</span> <span class="kd">function</span><span class="p">.</span> 
+<span class="err">#</span> <span class="nx">user</span> <span class="nx">types</span> <span class="nx">or</span> <span class="nx">changes</span> <span class="nx">the</span> <span class="nx">input</span><span class="p">,</span> <span class="nx">it</span> <span class="nx">triggers</span> <span class="nx">a</span> <span class="nx">search</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">corresponding</span> <span class="nx">table</span> <span class="nx">column</span> 
+<span class="err">#</span> <span class="nx">using</span> <span class="nx">DataTables</span><span class="err">'</span> <span class="nx">search</span><span class="p">()</span> <span class="kd">function</span> <span class="nx">the</span> <span class="nx">search</span> <span class="nx">is</span> <span class="nx">performed</span> <span class="nx">dynamically</span> <span class="nx">as</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">types</span><span class="p">,</span> <span class="nx">and</span> <span class="nx">the</span> <span class="nx">table</span> <span class="nx">is</span> 
+<span class="err">#</span> <span class="nx">redrawn</span> <span class="nx">to</span> <span class="nx">display</span> <span class="nx">the</span> <span class="nx">filtered</span> <span class="nx">results</span><span class="p">.</span>
                         <span class="p">}</span>
                     <span class="p">});</span>
                 <span class="p">});</span>
             <span class="p">});</span>
         <span class="p">});</span>
-    <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 
     </div>
@@ -526,9 +326,16 @@ window.onload = wrap_img;
 <div class="output_html rendered_html output_subarea ">
 
 
+    <!-- Include jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Include DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+    
+    <!-- Include DataTables JavaScript -->
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+    <!-- Define custom styling for the table -->
     <style>
         table {
             border-collapse: collapse;
@@ -543,7 +350,6 @@ window.onload = wrap_img;
         td {
             padding: 10px;
             color: white;
-            
         }
         td:nth-child(odd) {
             background-color: black;
@@ -560,8 +366,10 @@ window.onload = wrap_img;
     </style>
 
 
+    <!-- Create an empty table with the id "starWarsTable" -->
     <table id="starWarsTable">
         <thead>
+            <!-- Define the table header -->
             <tr>
                 <th>Name</th>
                 <th>Planet</th>
@@ -570,8 +378,11 @@ window.onload = wrap_img;
         </thead>
         <tbody></tbody>
     </table>
+    
+    <!-- JavaScript code -->
     <script>
         $(document).ready(function() {
+            // Create an object for the Star Wars API request configuration
             var starWarsAPI = {
                 "async": true,
                 "crossDomain": true,
@@ -583,23 +394,27 @@ window.onload = wrap_img;
                 }
             };
 
+            // Send an AJAX request to the Star Wars API
             $.ajax(starWarsAPI).done(function (response) {
                 console.log(response);
+                
+                // Create a DataTable using the response data
                 var table = $('#starWarsTable').DataTable({
                     data: response,
                     columns: [
-                        { data: 'name' },
-                        { data: 'homeworld' },
-                        { data: 'species' }
+                        { data: 'name' },       // Column 1: Name
+                        { data: 'homeworld' },  // Column 2: Planet
+                        { data: 'species' }     // Column 3: Species
                     ]
                 });
-                
-                // Add search features
+
+                // Add search inputs to each table column header
                 $('#starWarsTable thead th').each(function () {
                     var title = $(this).text();
                     $(this).html('<input type="text" placeholder="Search ' + title + '" />');
                 });
                 
+                // Apply the search functionality for each column
                 table.columns().every(function () {
                     var that = this;
 
@@ -613,20 +428,25 @@ window.onload = wrap_img;
         });
     </script>
 
+&lt;/div&gt;
 
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-
-</div>
-</div>
-
-</div>
+&lt;/div&gt;
     
 
-</div>
+&lt;/div&gt;
+ 
 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 </body>
   </div><!-- from https://github.com/utterance/utterances -->
